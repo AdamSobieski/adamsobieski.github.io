@@ -16,15 +16,15 @@ Let us consider a function,
 
 $$ \left< X_{N+1}, R_{N+1}^{+}, R_{N+1}^{-}, M_{N+1}^{++}, M_{N+1}^{+-}, M_{N+1}^{-+}, M_{N+1}^{--} \right> = C \left( X_{N}, R_{N}^{+}, R_{N}^{-}, M_{N}^{++}, M_{N}^{+-}, M_{N}^{-+}, M_{N}^{--} \right) $$
 
-where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for producing or adding mathematical expressions, and $R_{i}^{-}$ are sets of rules for removing or deleting mathematical expressions.
+where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing mathematical expressions, $M_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $M_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $M_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $M_{i}^{--}$ are sets of rules for removing rules from sets of subtractive rules.
 
 An illustrative example is one where the function, $C$, is provided with the initial conditions of a set of mathematical expressions, $X_{0}$, and an initial set of additive rules, $R_{0}^{+}$.
 
-$$ \left< X_{1}, R_{1}^{+}, R_{1}^{-} \right> = C \left( X_{0}, R_{0}^{+}, \emptyset \right) $$
+$$ \left< X_{1}, R_{1}^{+}, R_{1}^{-}, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right) $$
 
 For some scenarios, this output vector could be rewritten as:
 
-$$ \left< X_{1}, R_{0}^{+}, \emptyset \right> = C \left( X_{0}, R_{0}^{+}, \emptyset \right) $$
+$$ \left< X_{1}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right) $$
 
 ### Mathematical Truth
 
