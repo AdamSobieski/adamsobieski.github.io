@@ -38,6 +38,8 @@ For some such scenarios, the following simplifications might hold:
 
 $$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> \right) $$
 
+One approach is to consider that rules can be represented as mathematical expressions and that additive rules, $r_{i}^{+}$, could generate special rule-like mathematical expressions which would be plucked out of intermediate sets and placed into $r_{i+1}^{+}$ instead of into $x_{i+1}$ per one or more rules in $m_{0}^{++}$.
+
 ### Mathematical Truth
 
 The sets of mathematical expressions, e.g., $x_{i}$, can be interpreted as being intended to be sets of "true" mathematical expressions.
