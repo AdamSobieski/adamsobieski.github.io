@@ -14,7 +14,7 @@ $$ equals(plus(1, 2), 3) \Leftrightarrow 1 + 2 = 3 $$
 
 Let us consider a function,
 
-$$ \left< X_{N+1}, R_{N+1}^{+}, R_{N+1}^{-} \right> = C \left( X_{N}, R_{N}^{+}, R_{N}^{-} \right) $$
+$$ \left< X_{N+1}, R_{N+1}^{+}, R_{N+1}^{-}, M_{N+1}^{++}, M_{N+1}^{+-}, M_{N+1}^{-+}, M_{N+1}^{--} \right> = C \left( X_{N}, R_{N}^{+}, R_{N}^{-}, M_{N}^{++}, M_{N}^{+-}, M_{N}^{-+}, M_{N}^{--} \right) $$
 
 where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for producing or adding mathematical expressions, and $R_{i}^{-}$ are sets of rules for removing or deleting mathematical expressions.
 
