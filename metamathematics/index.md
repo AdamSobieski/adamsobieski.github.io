@@ -18,20 +18,20 @@ $$ \left< X_{k+1}, R_{k+1}^{+}, R_{k+1}^{-}, M_{k+1}^{++}, M_{k+1}^{+-}, M_{k+1}
 
 where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing mathematical expressions, $M_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $M_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $M_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $M_{i}^{\-\-}$ are sets of rules for removing rules from sets of subtractive rules.
 
-An illustrative example is one where a function, $C$, is provided with initial conditions including only a set of mathematical expressions, $X_{0}$, and an initial set of additive rules, $R_{0}^{+}$.
+An illustrative example is one where a function, $C$, is provided with initial conditions including only a set of mathematical expressions, $x_{0}$, and an initial set of additive rules, $r_{0}^{+}$.
 
 For some such scenarios, the following simplifications might hold:
 
-$$ \left< X_{1}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
+$$ \left< x_{1}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
 
-$$ \left< X_{2}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( C \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) \right) $$
+$$ \left< x_{2}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( C \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) \right) $$
 
-$$ \left< X_{N}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = \overbrace{C \ldots C}^{N} \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
+$$ \left< x_{N}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = \overbrace{C \ldots C}^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
 
 Which, per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_function), we can write:
 
-$$ \left< X_{N}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
+$$ \left< x_{N}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
 
 ### Mathematical Truth
 
-The sets $X_{i}$ can be interpreted as being intended to be sets of "true" mathematical expressions.
+The sets of mathematical expressions, e.g., $x_{i}$, can be interpreted as being intended to be sets of "true" mathematical expressions.
