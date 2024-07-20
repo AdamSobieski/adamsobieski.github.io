@@ -7,6 +7,7 @@ highlighter: rouge
 gist:
   noscript: false
 markdown: kramdown
+mathjax: true
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
