@@ -10,4 +10,6 @@ $$ \left< X_{N+1}, R_{N+1}^{+}, R_{N+1}^{-}, M_{N+1}^{+}, M_{N+1}^{-} \right> = 
 
 where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for producing or adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing or deleting mathematical expressions, $M_{i}^{+}$ are sets of rules for producing or adding rules, and $M_{i}^{-}$ are sets of rules for removing or deleting rules.
 
-The iterative application of $C$ can be provided with initial conditions, arguments $X_{0}$, $R_{0}^{+}$, $R_{0}^{-}$, $M_{0}^{+}$, and $M_{0}^{-}$.
+An illustrative example is one where the function, $C$, is provided with the initial conditions of a set of mathematical expressions, $X_{0}$, and an initial set of additive rules, $R_{0}^{+}$.
+
+$$ \left< X_{1}, R_{1}^{+}, R_{1}^{-}, M_{1}^{+}, M_{1}^{-} \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right) $$
