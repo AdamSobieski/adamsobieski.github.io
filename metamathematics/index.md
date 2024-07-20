@@ -1,5 +1,3 @@
-## Introduction
-
 This is a sketchpad for some [metalogic](https://en.wikipedia.org/wiki/Metalogic) and [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
 Mathematical expressions can be considered as naturally being nested trees of $n$-ary functions, these capable of being mapped with arbitrary mathematical notations.
@@ -10,4 +8,4 @@ Let us consider a function, $C$,
 
 $$ \left< X_{N+1}, R_{N+1}^{+}, R_{N+1}^{-}, M_{N+1}^{+}, M_{N+1}^{-} \right> = C \left( X_{N}, R_{N}^{+}, R_{N}^{-}, M_{N}^{+}, M_{N}^{-} \right) $$
 
-Above, $X_{i}$ are sets of mathematical expressions.
+Above, $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for producing or adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing or deleting mathematical expressions.
