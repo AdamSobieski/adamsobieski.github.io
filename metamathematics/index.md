@@ -40,7 +40,7 @@ $$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptys
 
 One approach is to consider that rules can be represented as mathematical expressions and that additive rules, $r_{i}^{+}$, could generate rule-like mathematical expressions which could be plucked out of intermediate sets and placed into $r_{i+1}^{+}$ instead of into $x_{i+1}$ per one or more rules in $m_{0}^{++}$.
 
-Another approach is to consider that a set of rules could exist in $m_{0}^{++}$ which would otherwise utilizes both expressions in $x_{i}$ and rules in $r_{i}^{+}$ to add rules to $r_{i+1}^{+}$, those rules which are used to add expressions to $x_{i+2}$.
+Another approach is to consider that a set of rules could exist in $m_{0}^{++}$ which would otherwise utilize both expressions from $x_{i}$ and rules from $r_{i}^{+}$ to add rules to $r_{i+1}^{+}$, those rules which could be used to add expressions into $x_{i+2}$.
 
 ### Rules Applied to Expressions and to Rules
 
