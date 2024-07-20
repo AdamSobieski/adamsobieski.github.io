@@ -1,4 +1,4 @@
-This is a sketchpad for some [metalogic](https://en.wikipedia.org/wiki/Metalogic) and [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
+This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
 Mathematical expressions can be considered as naturally being nested trees of $n$-ary functions, these capable of being mapped with arbitrary mathematical notations.
 
@@ -14,6 +14,8 @@ An illustrative example is one where the function, $C$, is provided with the ini
 
 $$ \left< X_{1}, R_{1}^{+}, R_{1}^{-}, M_{1}^{+}, M_{1}^{-} \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right) $$
 
-Depending on $C$, this output vector could be rewritten as
+For some scenarios, this output vector could be rewritten as:
 
 $$ \left< X_{1}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right) $$
+
+The sets $X_{i}$ can be interpreted as being intended to be sets of "true" mathematical expressions.
