@@ -13,3 +13,7 @@ where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rule
 An illustrative example is one where the function, $C$, is provided with the initial conditions of a set of mathematical expressions, $X_{0}$, and an initial set of additive rules, $R_{0}^{+}$.
 
 $$ \left< X_{1}, R_{1}^{+}, R_{1}^{-}, M_{1}^{+}, M_{1}^{-} \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right) $$
+
+Depending on $C$, this output vector could be rewritten as
+
+$$ \left< X_{1}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right) $$
