@@ -28,6 +28,10 @@ $$ \left< X_{2}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyse
 
 $$ \left< X_{N}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = \overbrace{C \ldots C}^{N} \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
 
+Which, per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_function), we can write:
+
+$$ \left< X_{N}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
+
 ### Mathematical Truth
 
 The sets $X_{i}$ can be interpreted as being intended to be sets of "true" mathematical expressions.
