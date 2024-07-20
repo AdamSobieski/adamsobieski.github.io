@@ -1,4 +1,6 @@
-title: "Metamathematics Sketchpad"
+---
+title: Metamathematics Sketchpad
+---
 
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
