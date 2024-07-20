@@ -14,7 +14,7 @@ $$ equals(plus(1, 2), 3) \Leftrightarrow 1 + 2 = 3 $$
 
 Let us consider a function,
 
-$$ \left< X_{N+1}, R_{N+1}^{+}, R_{N+1}^{-}, M_{N+1}^{++}, M_{N+1}^{+-}, M_{N+1}^{-+}, M_{N+1}^{--} \right> = C \left( \left< X_{N}, R_{N}^{+}, R_{N}^{-}, M_{N}^{++}, M_{N}^{+-}, M_{N}^{-+}, M_{N}^{--} \right> \right) $$
+$$ \left< X_{k+1}, R_{k+1}^{+}, R_{k+1}^{-}, M_{k+1}^{++}, M_{k+1}^{+-}, M_{k+1}^{-+}, M_{k+1}^{--} \right> = C \left( \left< X_{k}, R_{k}^{+}, R_{k}^{-}, M_{k}^{++}, M_{k}^{+-}, M_{k}^{-+}, M_{k}^{--} \right> \right) $$
 
 where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing mathematical expressions, $M_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $M_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $M_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $M_{i}^{\-\-}$ are sets of rules for removing rules from sets of subtractive rules.
 
