@@ -8,4 +8,4 @@ Let us consider a function, $C$,
 
 $$ \left< X_{N+1}, R_{N+1}^{+}, R_{N+1}^{-}, M_{N+1}^{+}, M_{N+1}^{-} \right> = C \left( X_{N}, R_{N}^{+}, R_{N}^{-}, M_{N}^{+}, M_{N}^{-} \right) $$
 
-Above, $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for producing or adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing or deleting mathematical expressions.
+where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for producing or adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing or deleting mathematical expressions, $M_{i}^{+}$ are sets of rules for producing or adding rules, and $M_{i}^{-}$ are sets of rules for removing or deleting rules.
