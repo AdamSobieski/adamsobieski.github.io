@@ -40,6 +40,8 @@ $$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptys
 
 One approach is to consider that rules can be represented as mathematical expressions and that additive rules, $r_{i}^{+}$, could generate special rule-like mathematical expressions which would be plucked out of intermediate sets and placed into $r_{i+1}^{+}$ instead of into $x_{i+1}$ per one or more rules in $m_{0}^{++}$.
 
+Another approach is to consider that a set of rules exists in $m_{0}^{++}$ which otherwise utilizes both $x_{i}$ and $r_{i}^{+}$ to add elements to $r_{i+1}^{+}$, the rules which are used to add elements to $x_{i+2}$.
+
 ### Mathematical Truth
 
 The sets of mathematical expressions, e.g., $x_{i}$, can be interpreted as being intended to be sets of "true" mathematical expressions.
