@@ -24,7 +24,7 @@ For some such scenarios, the following simplifications might hold:
 
 $$ \left< X_{1}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
 
-$$ \left< X_{N}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = \overbrace{C ... C_\text{N}} \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
+$$ \left< X_{N}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = \overbrace{C ... C}{N} \left( \left< X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
 
 ### Mathematical Truth
 
