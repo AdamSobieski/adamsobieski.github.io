@@ -13,10 +13,10 @@ kramdown:
   syntax_highlighter: rouge
 
 defaults:
-  # _posts
+  # _pages
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
       layout: single
       author_profile: true
@@ -25,4 +25,3 @@ defaults:
       share: true
       related: true
       mathjax: true
-  
