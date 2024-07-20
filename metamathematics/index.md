@@ -1,5 +1,5 @@
 ---
-title: Metamathematics Sketchpad
+title: Metamathematics
 ---
 
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
@@ -52,6 +52,6 @@ The sets of mathematical expressions, e.g., $x_{i}$, can be interpreted as being
 
 ### Bibliography
 
-Silver, Charles L. _From Symbolic Logic...To Mathematical Logic_. Dubuque, IA: Brown (William C.), 1994.
+Silver, Charles L. _From Symbolic Logic... To Mathematical Logic_. Dubuque, IA: Brown (William C.), 1994.
 
 Wolfram, Stephen. _Metamathematics: Foundations & Physicalization_. Champaign, IL: Wolfram Media, 2022.
