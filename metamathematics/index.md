@@ -38,10 +38,20 @@ For some such scenarios, the following simplifications might hold:
 
 $$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> \right) $$
 
-One approach is to consider that rules can be represented as mathematical expressions and that additive rules, $r_{i}^{+}$, could generate special rule-like mathematical expressions which would be plucked out of intermediate sets and placed into $r_{i+1}^{+}$ instead of into $x_{i+1}$ per one or more rules in $m_{0}^{++}$.
+One approach is to consider that rules can be represented as mathematical expressions and that additive rules, $r_{i}^{+}$, could generate rule-like mathematical expressions which could be plucked out of intermediate sets and placed into $r_{i+1}^{+}$ instead of into $x_{i+1}$ per one or more rules in $m_{0}^{++}$.
 
-Another approach is to consider that a set of rules exists in $m_{0}^{++}$ which otherwise utilizes both $x_{i}$ and $r_{i}^{+}$ to add elements to $r_{i+1}^{+}$, the rules which are used to add elements to $x_{i+2}$.
+Another approach is to consider that a set of rules could exist in $m_{0}^{++}$ which would otherwise utilizes both expressions in $x_{i}$ and rules in $r_{i}^{+}$ to add rules to $r_{i+1}^{+}$, those rules which are used to add expressions to $x_{i+2}$.
+
+### Rules Applied to Rules
+
+### Rulial Systems
 
 ### Mathematical Truth
 
 The sets of mathematical expressions, e.g., $x_{i}$, can be interpreted as being intended to be sets of "true" mathematical expressions.
+
+### Bibliography
+
+Silver, Charles L. _From Symbolic Logic...To Mathematical Logic_. Dubuque, IA: Brown (William C.), 1994.
+
+Wolfram, Stephen. _Metamathematics: Foundations & Physicalization_. Champaign, IL: Wolfram Media, 2022.
