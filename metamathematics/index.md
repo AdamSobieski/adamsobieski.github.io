@@ -1,8 +1,14 @@
+### Introduction
+
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
-Mathematical expressions can be considered as naturally being nested trees of $n$-ary functions, these capable of being mapped with arbitrary mathematical notations.
+### Mathematical Expressions
 
-$$ equals(plus(2, 2), 4) \Leftrightarrow 2 + 2 = 4 $$
+Mathematical expressions can be considered as naturally being trees of $n$-ary functions, these trees capable of being mapped with arbitrary mathematical notations.
+
+$$ equals(plus(1, 2), 3) \Leftrightarrow 1 + 2 = 3 $$
+
+### Iterative Computation of Sets of Mathematical Expressions
 
 Let us consider a function,
 
@@ -12,10 +18,12 @@ where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rule
 
 An illustrative example is one where the function, $C$, is provided with the initial conditions of a set of mathematical expressions, $X_{0}$, and an initial set of additive rules, $R_{0}^{+}$.
 
-$$ \left< X_{1}, R_{1}^{+}, R_{1}^{-}, M_{1}^{+}, M_{1}^{-} \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right) $$
+$$ \left< X_{1}, R_{1}^{+}, R_{1}^{-}, M_{1}^{+}, M_{1}^{-} \right> = C \left( X_{0}, R_{0}^{+}, \varnothing, \varnothing, \varnothing \right) $$
 
 For some scenarios, this output vector could be rewritten as:
 
-$$ \left< X_{1}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right> = C \left( X_{0}, R_{0}^{+}, \emptyset, \emptyset, \emptyset \right) $$
+$$ \left< X_{1}, R_{0}^{+}, \varnothing, \varnothing, \varnothing \right> = C \left( X_{0}, R_{0}^{+}, \varnothing, \varnothing, \varnothing \right) $$
+
+### Mathematical Truth
 
 The sets $X_{i}$ can be interpreted as being intended to be sets of "true" mathematical expressions.
