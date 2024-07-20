@@ -32,6 +32,12 @@ Which, per the notation of [iterated functions](https://en.wikipedia.org/wiki/It
 
 $$ \left< x_{N}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
 
+Another illustrative example is one where a function, $C$, is provided with initial conditions including only a set of mathematical expressions, $x_{0}$, an initial set of additive rules, $r_{0}^{+}$, and a set of rules for adding additive rules, $m_{0}^{++}$.
+
+For some such scenarios, the following simplifications might hold:
+
+$$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> \right) $$
+
 ### Mathematical Truth
 
 The sets of mathematical expressions, e.g., $x_{i}$, can be interpreted as being intended to be sets of "true" mathematical expressions.
