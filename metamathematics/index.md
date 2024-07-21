@@ -44,7 +44,7 @@ $$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}\left( x_{n} \right) \right) \setminus r
 
 $$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{0}^{+-}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
-$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup \funop{m_{0}^{-+}( x_{n}, r_{n}^{+}, r_{n}^{-})} \right) \setminus m_{0}^{--}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{0}^{--}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
 ### Rules Applied to Sets of Expressions and Rules
 
