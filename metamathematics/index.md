@@ -62,7 +62,7 @@ $$ m_{n+1}^{--} = m_{n}^{--} $$
 
 This set of equations could be simplified:
 
-$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left< x_{n} \right> \right) \setminus r_{n}^{-} \left< x_{n} \right> $$
+$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left< \left[ x_{n} \right] \right> \right) \setminus r_{n}^{-} \left< \left[ x_{n} \right] \right> $$
 
 $$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++} \left< x_{n}, r_{n}^{+}, r_{n}^{-} \right> \right) \setminus m_{0}^{+-} \left< x_{n}, r_{n}^{+}, r_{n}^{-} \right> $$
 
