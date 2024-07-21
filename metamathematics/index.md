@@ -12,7 +12,9 @@ $$ equals(plus(1, 2), 3) \Leftrightarrow 1 + 2 = 3 $$
 
 ### Iterated Computation of Sets of Expressions and Rules
 
-Let us consider a function, $C$ : $X \times R \times R \times M \times M \times M \times M \rightarrow X \times R \times R \times M \times M \times M \times M$
+Let us consider a function, $C$,
+
+$$ C : X \times R \times R \times M \times M \times M \times M \rightarrow X \times R \times R \times M \times M \times M \times M$$
 
 $$ \left< x_{n+1}, r_{n+1}^{+}, r_{n+1}^{-}, m_{n+1}^{++}, m_{n+1}^{+-}, m_{n+1}^{-+}, m_{n+1}^{--} \right> = C \left( \left< x_{n}, r_{n}^{+}, r_{n}^{-}, m_{n}^{++}, m_{n}^{+-}, m_{n}^{-+}, m_{n}^{--} \right> \right) $$
 
