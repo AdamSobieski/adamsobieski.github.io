@@ -44,13 +44,13 @@ For some such scenarios, the following simplifications might hold:
 
 $$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> \right) $$
 
-Using a syntax convention that $\hat{r}_{n}^{+} \left( x_{n} \right)$ means those expressions produced by applying the rules $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $\hat{m}_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$ means those rules produced by applying the rules $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, the following could be stated with respect to a possible implementation of a function $C$:
+Using a syntax convention that $r_{n}^{+} \left( x_{n} \right)$ means those expressions produced by applying the rules $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $m_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$ means those rules produced by applying the rules $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, the following could be stated with respect to a possible implementation of a function $C$:
 
-$$ x_{n+1} = \left( x_{n} \cup \hat{r}_{n}^{+} \left( x_{n} \right) \right) \setminus \hat{r}_{n}^{-} \left( x_{n} \right) $$
+$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
 
-$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup \hat{m}_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus \hat{m}_{n}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{n}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
-$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup \hat{m}_{n}^{-+} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus \hat{m}_{n}^{--} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{n}^{-+} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{n}^{--} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
 $$ m_{n+1}^{++} = m_{n}^{++} $$
 
@@ -62,11 +62,11 @@ $$ m_{n+1}^{--} = m_{n}^{--} $$
 
 This set of equations could be simplified:
 
-$$ x_{n+1} = \left( x_{n} \cup \hat{r}_{n}^{+} \left( x_{n} \right) \right) \setminus \hat{r}_{n}^{-} \left( x_{n} \right) $$
+$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
 
-$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup \hat{m}_{0}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus \hat{m}_{0}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{0}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
-$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup \hat{m}_{0}^{-+} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus \hat{m}_{0}^{--} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{0}^{--} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
 ### Rules Applied to Sets of Expressions and Rules
 
