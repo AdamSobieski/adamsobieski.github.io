@@ -44,7 +44,7 @@ For some such scenarios, the following simplifications might hold:
 
 $$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> \right) $$
 
-Using a syntax convention that $r_{n}^{+} \left( x_{n} \right)$ means those expressions produced by applying the rules $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $m_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$ means those rules produced by applying the rules $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, the following could be stated with respect to a possible implementation of a function $C$:
+Using a syntax convention that $`\mathring{r}_{n}^{+} \left( x_{n} \right)`$ means those expressions produced by applying the rules $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $`mathring{m}_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)`$ means those rules produced by applying the rules $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, the following could be stated with respect to a possible implementation of a function $C$:
 
 $$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
 
