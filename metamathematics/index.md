@@ -68,7 +68,7 @@ $$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++} \left( x_{n}, r_{n}^{+}, r_{n}
 
 $$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{0}^{--} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
-### Rules Applied to Expressions and to Rules
+### Rules Applied to Sets of Expressions and Rules
 
 ### Rulial Systems
 
