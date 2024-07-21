@@ -26,6 +26,8 @@ $$ \left< x_{1}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyse
 
 $$ \left< x_{2}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( C \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) \right) $$
 
+$$ \vdots $$
+
 $$ \left< x_{N}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = \overbrace{C \ldots C}^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
 
 Which, per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_function), we can write:
@@ -40,13 +42,21 @@ $$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptys
 
 One approach is to consider that a set of rules could exist in $m_{0}^{++}$ which would otherwise utilize both expressions from $x_{i}$ and rules from $r_{i}^{+}$ to add rules to $r_{i+1}^{+}$, those rules which could be used to add expressions into $x_{i+2}$.
 
-In this approach, using the convention that $R_{n}^{+} \left( X_{n} \right)$ means those expressions produced by applying the rules $R_{n}^{+}$ to the set of mathematical expressions $X_{n}$, the following could be stated with respect to $C$:
+In this approach, using the convention that $R_{n}^{+} \left( X_{n} \right)$ means those expressions produced by applying the rules $R_{n}^{+}$ to the set of mathematical expressions $X_{n}$, the following could be stated with respect to one possible $C$:
 
 $$ X_{n+1} = \left( X_{n} \cup R_{n}^{+} \left( X_{n} \right) \right) \setminus R_{n}^{-} \left( X_{n} \right) $$
 
 $$ R_{n+1}^{+} = \left( R_{n}^{+} \cup M_{n}^{++} \left( R_{n}^{+} \right) \right) \setminus M_{n}^{+-} \left( R_{n}^{+} \right) $$
 
 $$ R_{n+1}^{-} = \left( R_{n}^{-} \cup M_{n}^{-+} \left( R_{n}^{-} \right) \right) \setminus M_{n}^{--} \left( R_{n}^{-} \right) $$
+
+$$ M_{n+1}^{++} = M_{n}^{++}$$
+
+$$ M_{n+1}^{+-} = M_{n}^{+-}$$
+
+$$ M_{n+1}^{-+} = M_{n}^{-+}$$
+
+$$ M_{n+1}^{--} = M_{n}^{--}$$
 
 ### Rules Applied to Expressions and to Rules
 
