@@ -4,13 +4,13 @@ title: Metamathematics
 
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
-### Mathematical Expressions
+### Expressions
 
 Mathematical expressions can be considered as naturally being trees of $n$-ary functions, these trees capable of being mapped with arbitrary mathematical notations.
 
 $$ equals(plus(1, 2), 3) \Leftrightarrow 1 + 2 = 3 $$
 
-### Iterative Computation of Sets of Mathematical Expressions
+### Iterated Computation of Sets of Expressions and Rules
 
 Let us consider a function,
 
