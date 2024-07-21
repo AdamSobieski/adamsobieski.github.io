@@ -45,7 +45,9 @@ Another approach is to consider that a set of rules could exist in $m_{0}^{++}$ 
 In this approach, the following could be stated with respect to $C$:
 
 $$ X_{n+1} = R_{n}^{+} \left( X_{n} \right) \setminus R_{n}^{-} \left( X_{n} \right) $$
+
 $$ R_{n+1}^{+} = M_{n}^{++} \left( R_{n}^{+} \right) \setminus M_{n}^{+-} \left( R_{n}^{+} \right) $$
+
 $$ R_{n+1}^{-} = M_{n}^{-+} \left( R_{n}^{-} \right) \setminus M_{n}^{--} \left( R_{n}^{-} \right) $$
 
 ### Rules Applied to Expressions and to Rules
