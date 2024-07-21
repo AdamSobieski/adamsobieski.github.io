@@ -58,6 +58,14 @@ $$ M_{n+1}^{-+} = M_{n}^{-+}$$
 
 $$ M_{n+1}^{--} = M_{n}^{--}$$
 
+This set of equations could be simplified:
+
+$$ X_{n+1} = \left( X_{n} \cup R_{n}^{+} \left( X_{n} \right) \right) \setminus R_{n}^{-} \left( X_{n} \right) $$
+
+$$ R_{n+1}^{+} = \left( R_{n}^{+} \cup M_{0}^{++} \left( X_{n}, R_{n}^{+} \right) \right) \setminus M_{0}^{+-} \left( X_{n}, R_{n}^{+} \right) $$
+
+$$ R_{n+1}^{-} = \left( R_{n}^{-} \cup M_{0}^{-+} \left( X_{n}, R_{n}^{-} \right) \right) \setminus M_{0}^{--} \left( X_{n}, R_{n}^{-} \right) $$
+
 ### Rules Applied to Expressions and to Rules
 
 ### Rulial Systems
