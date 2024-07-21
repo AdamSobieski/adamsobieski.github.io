@@ -18,6 +18,10 @@ $$ \left< x_{n+1}, r_{n+1}^{+}, r_{n+1}^{-}, m_{n+1}^{++}, m_{n+1}^{+-}, m_{n+1}
 
 where $x_{i}$ are sets of mathematical expressions, $r_{i}^{+}$ are sets of rules for adding mathematical expressions, $r_{i}^{-}$ are sets of rules for removing mathematical expressions, $m_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $m_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $m_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $m_{i}^{\-\-}$ are sets of rules for removing rules from sets of subtractive rules.
 
+Per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_function), we can write:
+
+$$ \left< x_{N}, r_{N}^{+}, r_{N}^{-}, m_{N}^{++}, m_{N}^{+-}, m_{N}^{-+}, m_{N}^{--} \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, r_{0}^{-}, m_{0}^{++}, m_{0}^{+-}, m_{0}^{-+}, m_{0}^{--} \right> \right) $$
+
 Using a syntax convention that $r_{n}^{+} \left( x_{n} \right)$ means those expressions produced by applying the rules $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $m_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$ means those rules produced by applying the rules $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, the following could be stated with respect to a possible implementation of a function $C$:
 
 $$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
@@ -34,36 +38,13 @@ $$ m_{n+1}^{-+} = m_{n}^{-+} $$
 
 $$ m_{n+1}^{--} = m_{n}^{--} $$
 
-This set of equations could be simplified:
+This set of equations can be simplified:
 
 $$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
 
 $$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{0}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
 $$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{0}^{--} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
-
-An illustrative example is one where a function, $C$, is provided with initial conditions including only a set of mathematical expressions, $x_{0}$, and an initial set of additive rules, $r_{0}^{+}$.
-
-For some such scenarios, the following simplifications might hold:
-
-$$ \left< x_{1}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
-
-$$ \left< x_{2}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C \left( C \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) \right) $$
-
-$$ \vdots $$
-
-$$ \left< x_{N}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = \overbrace{C \ldots C}^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
-
-Which, per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_function), we can write:
-
-$$ \left< x_{N}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, \emptyset, \emptyset, \emptyset, \emptyset \right> \right) $$
-
-Another illustrative example is one where a function, $C$, is provided with initial conditions including only a set of mathematical expressions, $x_{0}$, an initial set of additive rules, $r_{0}^{+}$, and a set of rules for adding additive rules, $m_{0}^{++}$.
-
-For some such scenarios, the following simplifications might hold:
-
-$$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptyset \right> \right) $$
-
 
 ### Rules Applied to Sets of Expressions and Rules
 
