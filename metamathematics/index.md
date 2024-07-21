@@ -48,7 +48,7 @@ One approach is to consider that a set of rules could exist in $m_{0}^{++}$ whic
 
 In this approach, using a syntax convention that $r_{n}^{+} \left( x_{n} \right)$ means those expressions produced by applying the rules $r_{n}^{+}$ to the set of mathematical expressions $x_{n}$, and a synax convention that $m_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$ means those rules produces by applying the rules $m_{n}^{++}$ to the set of mathematical expressions $x_{n}$ and the sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, the following could be stated with respect to one possible implementation of a function $C$:
 
-$$ x_{n+1} = \left( X_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
+$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
 
 $$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{n}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
@@ -64,7 +64,7 @@ $$ m_{n+1}^{--} = m_{n}^{--} $$
 
 This set of equations could be simplified:
 
-$$ x_{n+1} = \left( X_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
+$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
 
 $$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{0}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
 
