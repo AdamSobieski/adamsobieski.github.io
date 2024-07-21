@@ -42,11 +42,11 @@ One approach is to consider that a set of rules could exist in $m_{0}^{++}$ whic
 
 In this approach, using the convention that $R_{n}^{+} \left( X_{n} \right)$ means those expressions produced by applying the rules $R_{n}^{+}$ to the set of mathematical expressions $X_{n}$, the following could be stated with respect to $C$:
 
-$$ X_{n+1} = \left( X_{n} \union R_{n}^{+} \left( X_{n} \right) \right) \setminus R_{n}^{-} \left( X_{n} \right) $$
+$$ X_{n+1} = \left( X_{n} \cup R_{n}^{+} \left( X_{n} \right) \right) \setminus R_{n}^{-} \left( X_{n} \right) $$
 
-$$ R_{n+1}^{+} = \left( R_{n}^{+} \union M_{n}^{++} \left( R_{n}^{+} \right) \right) \setminus M_{n}^{+-} \left( R_{n}^{+} \right) $$
+$$ R_{n+1}^{+} = \left( R_{n}^{+} \cup M_{n}^{++} \left( R_{n}^{+} \right) \right) \setminus M_{n}^{+-} \left( R_{n}^{+} \right) $$
 
-$$ R_{n+1}^{-} = \left( R_{n}^{-} \union M_{n}^{-+} \left( R_{n}^{-} \right) \right) \setminus M_{n}^{--} \left( R_{n}^{-} \right) $$
+$$ R_{n+1}^{-} = \left( R_{n}^{-} \cup M_{n}^{-+} \left( R_{n}^{-} \right) \right) \setminus M_{n}^{--} \left( R_{n}^{-} \right) $$
 
 ### Rules Applied to Expressions and to Rules
 
