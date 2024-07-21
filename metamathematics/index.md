@@ -12,11 +12,11 @@ $$ equals(plus(1, 2), 3) \Leftrightarrow 1 + 2 = 3 $$
 
 ### Iterated Computation of Sets of Expressions and Rules
 
-Let us consider a function,
+Let us consider a function, $C$ : $X \times R \times R \times M \times M \times M \times M \rightarrow X \times R \times R \times M \times M \times M \times M$
 
-$$ \left< X_{n+1}, R_{n+1}^{+}, R_{n+1}^{-}, M_{n+1}^{++}, M_{n+1}^{+-}, M_{n+1}^{-+}, M_{n+1}^{--} \right> = C \left( \left< X_{n}, R_{n}^{+}, R_{n}^{-}, M_{n}^{++}, M_{n}^{+-}, M_{n}^{-+}, M_{n}^{--} \right> \right) $$
+$$ \left< x_{n+1}, r_{n+1}^{+}, r_{n+1}^{-}, m_{n+1}^{++}, m_{n+1}^{+-}, m_{n+1}^{-+}, m_{n+1}^{--} \right> = C \left( \left< x_{n}, r_{n}^{+}, r_{n}^{-}, m_{n}^{++}, m_{n}^{+-}, m_{n}^{-+}, m_{n}^{--} \right> \right) $$
 
-where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing mathematical expressions, $M_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $M_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $M_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $M_{i}^{\-\-}$ are sets of rules for removing rules from sets of subtractive rules.
+where $x_{i}$ are sets of mathematical expressions, $r_{i}^{+}$ are sets of rules for adding mathematical expressions, $r_{i}^{-}$ are sets of rules for removing mathematical expressions, $m_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $m_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $m_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $m_{i}^{\-\-}$ are sets of rules for removing rules from sets of subtractive rules.
 
 An illustrative example is one where a function, $C$, is provided with initial conditions including only a set of mathematical expressions, $x_{0}$, and an initial set of additive rules, $r_{0}^{+}$.
 
@@ -42,29 +42,29 @@ $$ \left< x_{N}, r_{N}^{+}, \emptyset, m_{0}^{++}, \emptyset, \emptyset, \emptys
 
 One approach is to consider that a set of rules could exist in $m_{0}^{++}$ which would otherwise utilize both expressions from $x_{i}$ and rules from $r_{i}^{+}$ to add rules to $r_{i+1}^{+}$, those rules which could be used to add expressions into $x_{i+2}$.
 
-In this approach, using the convention that $R_{n}^{+} \left( X_{n} \right)$ means those expressions produced by applying the rules $R_{n}^{+}$ to the set of mathematical expressions $X_{n}$, and a convention that $M_{n}^{++} \left( X_{n}, R_{n}^{+} \right)$ means those rules produces by applying the rules $M_{n}^{++}$ to the set of mathematical expressions $X_{n}$ and the set of rules $R_{n}^{+}$, the following could be stated with respect to one possible implementation of a function $C$:
+In this approach, using a convention that $r_{n}^{+} \left( x_{n} \right)$ means those expressions produced by applying the rules $r_{n}^{+}$ to the set of mathematical expressions $x_{n}$, and a convention that $m_{n}^{++} \left( x_{n}, r_{n}^{+} \right)$ means those rules produces by applying the rules $m_{n}^{++}$ to the set of mathematical expressions $x_{n}$ and the set of rules $r_{n}^{+}$, the following could be stated with respect to one possible implementation of a function $C$:
 
-$$ X_{n+1} = \left( X_{n} \cup R_{n}^{+} \left( X_{n} \right) \right) \setminus R_{n}^{-} \left( X_{n} \right) $$
+$$ x_{n+1} = \left( X_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
 
-$$ R_{n+1}^{+} = \left( R_{n}^{+} \cup M_{n}^{++} \left( X_{n}, R_{n}^{+} \right) \right) \setminus M_{n}^{+-} \left( X_{n}, R_{n}^{+} \right) $$
+$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{n}^{++} \left( x_{n}, r_{n}^{+} \right) \right) \setminus m_{n}^{+-} \left( x_{n}, r_{n}^{+} \right) $$
 
-$$ R_{n+1}^{-} = \left( R_{n}^{-} \cup M_{n}^{-+} \left( X_{n}, R_{n}^{-} \right) \right) \setminus M_{n}^{--} \left( X_{n}, R_{n}^{-} \right) $$
+$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{n}^{-+} \left( x_{n}, r_{n}^{-} \right) \right) \setminus m_{n}^{--} \left( x_{n}, r_{n}^{-} \right) $$
 
-$$ M_{n+1}^{++} = M_{n}^{++}$$
+$$ m_{n+1}^{++} = m_{n}^{++}$$
 
-$$ M_{n+1}^{+-} = M_{n}^{+-}$$
+$$ m_{n+1}^{+-} = m_{n}^{+-}$$
 
-$$ M_{n+1}^{-+} = M_{n}^{-+}$$
+$$ m_{n+1}^{-+} = m_{n}^{-+}$$
 
-$$ M_{n+1}^{--} = M_{n}^{--}$$
+$$ m_{n+1}^{--} = m_{n}^{--}$$
 
 This set of equations could be simplified:
 
-$$ X_{n+1} = \left( X_{n} \cup R_{n}^{+} \left( X_{n} \right) \right) \setminus R_{n}^{-} \left( X_{n} \right) $$
+$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+} \left( x_{n} \right) \right) \setminus r_{n}^{-} \left( x_{n} \right) $$
 
-$$ R_{n+1}^{+} = \left( R_{n}^{+} \cup M_{0}^{++} \left( X_{n}, R_{n}^{+} \right) \right) \setminus M_{0}^{+-} \left( X_{n}, R_{n}^{+} \right) $$
+$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++} \left( x_{n}, r_{n}^{+} \right) \right) \setminus m_{0}^{+-} \left( x_{n}, r_{n}^{+} \right) $$
 
-$$ R_{n+1}^{-} = \left( R_{n}^{-} \cup M_{0}^{-+} \left( X_{n}, R_{n}^{-} \right) \right) \setminus M_{0}^{--} \left( X_{n}, R_{n}^{-} \right) $$
+$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+} \left( x_{n}, r_{n}^{-} \right) \right) \setminus m_{0}^{--} \left( x_{n}, r_{n}^{-} \right) $$
 
 ### Rules Applied to Expressions and to Rules
 
