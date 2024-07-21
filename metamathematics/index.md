@@ -14,13 +14,13 @@ $$ equals(plus(1, 2), 3) \Leftrightarrow 1 + 2 = 3 $$
 
 Let us consider a function, $C$, such that
 
-$$ \left< x_{n+1}, r_{n+1}^{+}, r_{n+1}^{-}, m_{n+1}^{++}, m_{n+1}^{+-}, m_{n+1}^{-+}, m_{n+1}^{--} \right> = C \left( \left< x_{n}, r_{n}^{+}, r_{n}^{-}, m_{n}^{++}, m_{n}^{+-}, m_{n}^{-+}, m_{n}^{--} \right> \right) $$
+$$ \left< x_{n+1}, r_{n+1}^{+}, r_{n+1}^{-}, m_{n+1}^{++}, m_{n+1}^{+-}, m_{n+1}^{-+}, m_{n+1}^{--} \right> = C( \left< x_{n}, r_{n}^{+}, r_{n}^{-}, m_{n}^{++}, m_{n}^{+-}, m_{n}^{-+}, m_{n}^{--} \right> ) $$
 
 where $x_{i}$ are sets of mathematical expressions, $r_{i}^{+}$ are sets of rules for adding mathematical expressions, $r_{i}^{-}$ are sets of rules for removing mathematical expressions, $m_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $m_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $m_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $m_{i}^{\-\-}$ are sets of rules for removing rules from sets of subtractive rules.
 
 Per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_function), we can write:
 
-$$ \left< x_{N}, r_{N}^{+}, r_{N}^{-}, m_{N}^{++}, m_{N}^{+-}, m_{N}^{-+}, m_{N}^{--} \right> = C^{N} \left( \left< x_{0}, r_{0}^{+}, r_{0}^{-}, m_{0}^{++}, m_{0}^{+-}, m_{0}^{-+}, m_{0}^{--} \right> \right) $$
+$$ \left< x_{N}, r_{N}^{+}, r_{N}^{-}, m_{N}^{++}, m_{N}^{+-}, m_{N}^{-+}, m_{N}^{--} \right> = C^{N}( \left< x_{0}, r_{0}^{+}, r_{0}^{-}, m_{0}^{++}, m_{0}^{+-}, m_{0}^{-+}, m_{0}^{--} \right> ) $$
 
 Using a syntax convention that $r_{n}^{+} \left( x_{n} \right)$ means those expressions produced by applying the rules in set $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $m_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$ means those rules produced by applying the rules in set $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, let the following equations describe $C$:
 
