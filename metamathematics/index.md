@@ -62,11 +62,11 @@ $$ m_{n+1}^{--} = m_{n}^{--} $$
 
 This set of equations could be simplified:
 
-$$ x_{n+1} = \left( x_{n} \cup \hat{r}\_{n}^{+} \left( x_{n} \right) \right) \setminus \hat{r}\_{n}^{-} \left( x_{n} \right) $$
+$$x_{n+1} = \left( x_{n} \cup \hat{r}\_{n}^{+} \left( x_{n} \right) \right) \setminus \hat{r}\_{n}^{-} \left( x_{n} \right)$$
 
-$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup \hat{m}\_{0}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus \hat{m}\_{0}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$r_{n+1}^{+} = \left( r_{n}^{+} \cup \hat{m}\_{0}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus \hat{m}\_{0}^{+-} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$$
 
-$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup \hat{m}\_{0}^{-+} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus \hat{m}\_{0}^{--} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$r_{n+1}^{-} = \left( r_{n}^{-} \cup \hat{m}\_{0}^{-+} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus \hat{m}\_{0}^{--} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$$
 
 ### Rules Applied to Sets of Expressions and Rules
 
