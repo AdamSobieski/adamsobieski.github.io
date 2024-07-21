@@ -24,11 +24,11 @@ $$ \left< x_{N}, r_{N}^{+}, r_{N}^{-}, m_{N}^{++}, m_{N}^{+-}, m_{N}^{-+}, m_{N}
 
 Using a syntax convention that $r_{n}^{+} \left( x_{n} \right)$ means those expressions produced by applying the rules in set $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $m_{n}^{++} \left( x_{n}, r_{n}^{+}, r_{n}^{-} \right)$ means those rules produced by applying the rules in set $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, let the following equations describe $C$:
 
-$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}\left( x_{n} \right) \right) \setminus r_{n}^{-}\left( x_{n} \right) $$
+$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}(x_{n}) \right) \setminus r_{n}^{-}(x_{n}) $$
 
-$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{n}^{++}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{n}^{+-}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{n}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{n}^{+-}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
-$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{n}^{-+}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{n}^{--}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{n}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{n}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
 $$ m_{n+1}^{++} = m_{n}^{++} $$
 
@@ -40,11 +40,11 @@ $$ m_{n+1}^{--} = m_{n}^{--} $$
 
 This set of equations can be simplified:
 
-$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}\left( x_{n} \right) \right) \setminus r_{n}^{-}\left( x_{n} \right) $$
+$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}(x_{n}) \right) \setminus r_{n}^{-}(x_{n}) $$
 
-$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) \right) \setminus m_{0}^{+-}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{0}^{+-}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
-$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{0}^{--}\left( x_{n}, r_{n}^{+}, r_{n}^{-} \right) $$
+$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{0}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
 ### Rules Applied to Sets of Expressions and Rules
 
