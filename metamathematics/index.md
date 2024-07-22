@@ -24,7 +24,7 @@ $$ r_{i}^{+}(x_{i}) = \bigcup_{\rho_{ij}^{+} \in r_{i}^{+}} \rho_{ij}^{+}(x_{i})
 
 $$ r_{i}^{-}(x_{i}) = \bigcup_{\rho_{ij}^{-} \in r_{i}^{-}} \rho_{ij}^{-}(x_{i}) $$
 
-Similarly with $m_{i}^{++}$.
+Similarly with the set of rules $m_{i}^{++}$ and the individual rules, $\mu_{ij}^{++}$, contained in that set.
 
 $$ m_{i}^{++}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{++} \in m_{i}^{++}} \mu_{ij}^{++}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
 
