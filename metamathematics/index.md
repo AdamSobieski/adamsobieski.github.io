@@ -46,7 +46,7 @@ $$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \
 
 $$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{0}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
-There are two deltas or differences possible to consider between the sets of mathematical expressions $x_{n+1}$ and $x_{n}$. First, there is the set of mathematical expressions which were added to $x_{n}$ to result in $x_{n+1}$. Second, there is the set of mathematical expressions which were removed from $x_{n}$ to result in $x_{n+1}$.
+There are two deltas or differences to consider between the sets of mathematical expressions $x_{n}$ and $x_{n+1}$. Firstly, there is the set of mathematical expressions which were added to $x_{n}$ to result in $x_{n+1}$. Secondly, there is the set of mathematical expressions which were removed from $x_{n}$ to result in $x_{n+1}$.
 
 $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{+} = x_{n+1} \setminus x_{n} $$
 
