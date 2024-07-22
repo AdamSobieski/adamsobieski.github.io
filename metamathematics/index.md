@@ -16,7 +16,13 @@ Per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_
 
 $$ \left< x_{N}, r_{N}^{+}, r_{N}^{-}, m_{N}^{++}, m_{N}^{+-}, m_{N}^{-+}, m_{N}^{--} \right> = C^{N}\left( \left< x_{0}, r_{0}^{+}, r_{0}^{-}, m_{0}^{++}, m_{0}^{+-}, m_{0}^{-+}, m_{0}^{--} \right> \right) $$
 
-Using a syntax convention that $r_{n}^{+}( x_{n})$ means those expressions produced by applying the rules in set $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $m_{n}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-})$ means those rules produced by applying the rules in set $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$, let the following equations describe $C$:
+Let us use a syntax convention that $r_{n}^{+}( x_{n})$ means those expressions produced by applying the rules in set $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $m_{n}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-})$ means those rules produced by applying the rules in set $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$.
+
+The resulting set of expressions from a set of rules, $r_{i}^{+}$, applied to a set of mathematical expressions, $x_{i}$, is the union of the resulting set from each contained rule, $\rho_{ij}^{+}$, in that set of rules, $r_{i}^{+}$.
+
+$$ r_{i}^{+}(x_{i}) = \bigcup_{\rho_{ij}^{+} \in \r_{i}^{+}} \rho_{ij}^{+}(x_{i}} $$
+
+Let the following equations describe $C$:
 
 $$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}(x_{n}) \right) \setminus r_{n}^{-}(x_{n}) $$
 
