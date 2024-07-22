@@ -20,7 +20,7 @@ Let us use a syntax convention that $r_{n}^{+}( x_{n})$ means those expressions 
 
 The resulting set of expressions from a set of rules, $r_{i}^{+}$, applied to a set of mathematical expressions, $x_{i}$, is the union of the resulting set from each contained rule, $\rho_{ij}^{+}$, in that set of rules, $r_{i}^{+}$.
 
-$$ r_{i}^{+}(x_{i}) = \bigcup_{\rho_{ij}^{+} \in \r_{i}^{+}} \rho_{ij}^{+}(x_{i}) $$
+$$ r_{i}^{+}(x_{i}) = \bigcup_{\rho_{ij}^{+} \in r_{i}^{+}} \rho_{ij}^{+}(x_{i}) $$
 
 Let the following equations describe $C$:
 
