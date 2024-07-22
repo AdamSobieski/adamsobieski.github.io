@@ -28,6 +28,12 @@ Similarly with $m_{i}^{++}$.
 
 $$ m_{i}^{++}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{++} \in m_{i}^{++}} \mu_{ij}^{++}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
 
+$$ m_{i}^{+-}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{+-} \in m_{i}^{+-}} \mu_{ij}^{+-}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
+
+$$ m_{i}^{-+}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{-+} \in m_{i}^{-+}} \mu_{ij}^{-+}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
+
+$$ m_{i}^{--}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{--} \in m_{i}^{--}} \mu_{ij}^{--}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
+
 Let the following equations describe $C$:
 
 $$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}(x_{n}) \right) \setminus r_{n}^{-}(x_{n}) $$
