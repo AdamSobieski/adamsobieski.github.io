@@ -70,7 +70,7 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{+} \subseteq r_{n}^{+}(x_{n}) $$
 
 $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 
-### Rules Applied to Sets of Expressions and Rules
+### Abstract Rewriting Systems
 
 ### Rulial Systems
 
