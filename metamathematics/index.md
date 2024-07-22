@@ -74,7 +74,7 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 [Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
 
 ### Lindenmayer Systems
-[L-systems](https://en.wikipedia.org/wiki/L-system)
+[L-system](https://en.wikipedia.org/wiki/L-system)
 
 ### Rulial Systems
 
