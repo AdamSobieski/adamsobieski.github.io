@@ -22,6 +22,8 @@ Let the resulting set of expressions from a set of rules, $r_{i}^{+}$, applied t
 
 $$ r_{i}^{+}(x_{i}) = \bigcup_{\rho_{ij}^{+} \in r_{i}^{+}} \rho_{ij}^{+}(x_{i}) $$
 
+$$ r_{i}^{-}(x_{i}) = \bigcup_{\rho_{ij}^{-} \in r_{i}^{-}} \rho_{ij}^{-}(x_{i}) $$
+
 Let the following equations describe $C$:
 
 $$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}(x_{n}) \right) \setminus r_{n}^{-}(x_{n}) $$
