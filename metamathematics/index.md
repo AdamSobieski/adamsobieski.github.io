@@ -71,12 +71,13 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{+} \subseteq r_{n}^{+}(x_{n}) $$
 $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 
 ### Abstract Rewriting Systems
+[Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
 
 ### Rulial Systems
 
 ### Mathematical Truth
 
-The sets of mathematical expressions, e.g., $x_{i}$, can be interpreted as being intended to be sets of "true" mathematical expressions.
+The sets of expressions, e.g., $x_{i}$, can be interpreted as being intended to be sets of "true" expressions.
 
 ### Bibliography
 
