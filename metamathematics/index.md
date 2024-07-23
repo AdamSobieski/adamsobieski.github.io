@@ -76,10 +76,19 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 ### Lindenmayer Systems
 [L-system](https://en.wikipedia.org/wiki/L-system)
 
-### Differentiable Self-organizing Systems
-[https://distill.pub/2020/selforg/](https://distill.pub/2020/selforg/), [https://distill.pub/2020/growing-ca/](https://distill.pub/2020/growing-ca/)
+### Rule Induction
+[Rule induction](https://en.wikipedia.org/wiki/Rule_induction)
+
+### Grammar Induction
+[Grammar induction](https://en.wikipedia.org/wiki/Grammar_induction)
+
+### Reverse Mathematics
+[Reverse mathematics](https://en.wikipedia.org/wiki/Reverse_mathematics)
 
 ### Rulial Systems
+
+### Differentiable Self-organizing Systems
+[https://distill.pub/2020/selforg/](https://distill.pub/2020/selforg/), [https://distill.pub/2020/growing-ca/](https://distill.pub/2020/growing-ca/)
 
 ### Mathematical Truth
 
