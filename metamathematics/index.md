@@ -71,26 +71,36 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{+} \subseteq r_{n}^{+}(x_{n}) $$
 $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 
 ### Abstract Rewriting Systems
+
 [Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
 
 ### Lindenmayer Systems
+
 [L-system](https://en.wikipedia.org/wiki/L-system)
 
 ### Rule Induction
+
 [Rule induction](https://en.wikipedia.org/wiki/Rule_induction)
 
 ### Grammar Induction
+
 [Grammar induction](https://en.wikipedia.org/wiki/Grammar_induction)
 
 ### Reverse Mathematics
+
 [Reverse mathematics](https://en.wikipedia.org/wiki/Reverse_mathematics)
 
 ### Differentiable Self-organizing Systems
+
 [https://distill.pub/2020/selforg/](https://distill.pub/2020/selforg/), [https://distill.pub/2020/growing-ca/](https://distill.pub/2020/growing-ca/)
 
 ### Mathematical Truth
 
 The sets of expressions, e.g., $x_{i}$, can be interpreted as being intended to be sets of "true" expressions.
+
+### Paradoxes
+
+[Paradox](https://en.wikipedia.org/wiki/Paradox), [Paradoxes and Contemporary Logic](https://plato.stanford.edu/entries/paradoxes-contemporary-logic/), [Self-reference and Paradox](https://plato.stanford.edu/entries/self-reference/)
 
 ### Bibliography
 
