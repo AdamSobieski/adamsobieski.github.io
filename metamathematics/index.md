@@ -84,7 +84,7 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 
 ### Grammar Induction
 
-[Grammar induction](https://en.wikipedia.org/wiki/Grammar_induction)
+[Grammar induction](https://en.wikipedia.org/wiki/Grammar_induction), [Grammar-based code](https://en.wikipedia.org/wiki/Grammar-based_code)
 
 ### Reverse Mathematics
 
