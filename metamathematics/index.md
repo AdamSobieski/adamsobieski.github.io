@@ -94,6 +94,10 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 
 [https://distill.pub/2020/selforg/](https://distill.pub/2020/selforg/), [https://distill.pub/2020/growing-ca/](https://distill.pub/2020/growing-ca/)
 
+### Graph Neural Networks
+
+[Graph neural network](https://en.wikipedia.org/wiki/Graph_neural_network)
+
 ### Mathematical Truth
 
 For some systems, the sets of expressions $x_{i}$ can be interpreted as being intended to be "true" expressions.
