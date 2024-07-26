@@ -68,7 +68,7 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} = x_{n} \setminus x_{n+1} $$
 
 Rules could be expressed with a notation resembling:
 
-$$ e_{3} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
+$$ e_{2} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} $$
 
 Note that certain additive rules of inference should be carefully considered before being added to the types of systems under discussion.
 
