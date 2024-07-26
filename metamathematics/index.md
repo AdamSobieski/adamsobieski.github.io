@@ -66,11 +66,17 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} = x_{n} \setminus x_{n+1} $$
 
 ### Rules
 
-Some rules could be expressed in a manner resembling:
+Rules could be expressed with a notation resembling:
 
 $$ e_{3} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
 
-Note that certain additive rules of logic should be carefully considered before being added to the types of systems under discussion. For instance, [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction).
+Note that certain additive rules of inference should be carefully considered before being added to the types of systems under discussion.
+
+That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
+
+$$ e_{1} \wedge e_{2} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
+
+would result in a combinatorial amount of expressions being added to iterated sets.
 
 ### Abstract Rewriting Systems
 
