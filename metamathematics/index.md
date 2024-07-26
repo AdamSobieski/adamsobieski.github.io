@@ -8,13 +8,21 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 Rules can be expressed using a notation:
 
+$$ e_{2} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} $$
+
+$$ e_{3} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i}, e_{2} \in x_{i} $$
+
+$$ e_{6} \in x_{i+1}, e_{7} \in x_{i+1} \stackrel{+}\leftarrow e_{4} \in x_{i}, e_{5} \in x_{i} $$
+
+In some cases, this notation could be simplified to:
+
 $$ e_{2} \stackrel{+}\leftarrow e_{1} $$
 
 $$ e_{3} \stackrel{+}\leftarrow e_{1}, e_{2} $$
 
 $$ e_{6}, e_{7} \stackrel{+}\leftarrow e_{4}, e_{5} $$
 
-Note that a rule can preserve its inputs across its transformation:
+Note that rules can preserve their inputs across their transformation:
 
 $$ e_{1}, e_{2} \stackrel{+}\leftarrow e_{1} $$
 
