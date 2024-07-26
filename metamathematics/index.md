@@ -18,7 +18,7 @@ This notation is useful for cases where rules involve multiple input and/or outp
 
 $$ \rho_{2} \in r_{i+1}^{+} \stackrel{+}\leftarrow e_{1} \in x_{i}, \rho_{1} \in  r_{i}^{+} $$
 
-In some cases, when dealing with one set, this notation can be simplified to:
+In some cases, when the sets being dealt with are clear in a context, this notation can be simplified to:
 
 $$ e_{2} \stackrel{+}\leftarrow e_{1} $$
 
