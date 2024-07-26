@@ -112,6 +112,10 @@ $$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
 
 [Grammar induction](https://en.wikipedia.org/wiki/Grammar_induction), [Grammar-based code](https://en.wikipedia.org/wiki/Grammar-based_code)
 
+### Tree Automata
+
+[Tree automaton](https://en.wikipedia.org/wiki/Tree_automaton)
+
 ### Reverse Mathematics
 
 [Reverse mathematics](https://en.wikipedia.org/wiki/Reverse_mathematics)
