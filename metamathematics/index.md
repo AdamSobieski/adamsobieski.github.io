@@ -70,7 +70,7 @@ Rules could be expressed with a notation resembling:
 
 $$ e_{2} \stackrel{+}\leftarrow e_{1} $$
 
-$$ e_{3} \stackrel{+}\leftarrow e_{1}, e{2} $$
+$$ e_{3} \stackrel{+}\leftarrow e_{1}, e_{2} $$
 
 Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference) should be carefully considered before being added to the types of systems under discussion. That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
 
