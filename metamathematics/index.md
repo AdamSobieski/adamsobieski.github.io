@@ -56,11 +56,11 @@ $$ m_{i}^{--}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{--} \in m_{i}^{-
 
 Let the following equations describe $C$:
 
-$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}(x_{n}) \right) \setminus r_{n}^{-}(x_{n}) $$
+$$ x_{n+1} = r_{n}^{+}(x_{n}) \setminus r_{n}^{-}(x_{n}) $$
 
-$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{n}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{n}^{+-}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ r_{n+1}^{+} = m_{n}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{n}^{+-}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
-$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{n}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{n}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ r_{n+1}^{-} = m_{n}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{n}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
 $$ m_{n+1}^{++} = m_{n}^{++} $$
 
@@ -72,11 +72,11 @@ $$ m_{n+1}^{--} = m_{n}^{--} $$
 
 This set of equations can be simplified:
 
-$$ x_{n+1} = \left( x_{n} \cup r_{n}^{+}(x_{n}) \right) \setminus r_{n}^{-}(x_{n}) $$
+$$ x_{n+1} = r_{n}^{+}(x_{n}) \setminus r_{n}^{-}(x_{n}) $$
 
-$$ r_{n+1}^{+} = \left( r_{n}^{+} \cup m_{0}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{0}^{+-}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ r_{n+1}^{+} = m_{0}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{+-}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
-$$ r_{n+1}^{-} = \left( r_{n}^{-} \cup m_{0}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \right) \setminus m_{0}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ r_{n+1}^{-} = m_{0}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
 There are two deltas or differences to consider between the sets of mathematical expressions $x_{n}$ and $x_{n+1}$. Firstly, there is the set of mathematical expressions that were added to $x_{n}$ to result in $x_{n+1}$. Secondly, there is the set of mathematical expressions that were removed from $x_{n}$ to result in $x_{n+1}$.
 
