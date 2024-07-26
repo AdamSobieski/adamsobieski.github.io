@@ -6,7 +6,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ### Rules
 
-Rules could be expressed with a notation resembling:
+Rules can be expressed using a notation:
 
 $$ e_{2} \stackrel{+}\leftarrow e_{1} $$
 
