@@ -68,15 +68,13 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} = x_{n} \setminus x_{n+1} $$
 
 Rules could be expressed with a notation resembling:
 
-$$ e_{3} \in x_{i+1} \leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
-
-$$ e_{4} \notin x_{i+1} \leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
+$$ e_{3} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
 
 Note that certain additive rules of inference should be carefully considered before being added to the types of systems under discussion.
 
 That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
 
-$$ e_{1} \wedge e_{2} \in x_{i+1} \leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
+$$ e_{1} \wedge e_{2} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
 
 would result in a combinatorial amount of expressions being added to sets during each iteration.
 
