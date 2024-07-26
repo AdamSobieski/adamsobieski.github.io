@@ -64,11 +64,13 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{+} = x_{n+1} \setminus x_{n} $$
 
 $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} = x_{n} \setminus x_{n+1} $$
 
-### Kinds of Rules
+### Rules
 
 Some rules could be expressed in a manner resembling:
 
 $$ e_{3} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
+
+Note that certain additive rules of logic should be carefully considered before being added to the types of systems under discussion. For instance, [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction).
 
 ### Abstract Rewriting Systems
 
