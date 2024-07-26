@@ -70,15 +70,13 @@ Rules could be expressed with a notation resembling:
 
 $$ e_{2} \stackrel{+}\leftarrow e_{1} $$
 
-which would mean that if $e_{1} \in x_{i}$, then $e_{2} \in x_{i+1}$.
+which would mean that if $e_{1} \in x_{i}$ then $e_{2} \in x_{i+1}$.
 
-Note that certain additive rules of inference should be carefully considered before being added to the types of systems under discussion.
-
-That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
+Certain additive rules of inference should be carefully considered before being added to the types of systems under discussion. That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
 
 $$ e_{1} \wedge e_{2} \stackrel{+}\leftarrow e_{1}, e_{2} $$
 
-would result in a combinatorial amount of expressions being added to sets during each iteration.
+would result in a combinatorial amount of expressions being added to sets $x_{i}$ during each iteration.
 
 ### Abstract Rewriting Systems
 
