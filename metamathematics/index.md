@@ -80,9 +80,9 @@ $$ r_{n+1}^{-} = m_{0}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{--}(x_
 
 There are two deltas or differences to consider between the sets of mathematical expressions $x_{n}$ and $x_{n+1}$. Firstly, there is the set of mathematical expressions that were added to $x_{n}$ to result in $x_{n+1}$. Secondly, there is the set of mathematical expressions that were removed from $x_{n}$ to result in $x_{n+1}$.
 
-$$ \Delta_{x_{n} \rightarrow x_{n+1}}^{+} = x_{n+1} \setminus x_{n} $$
+$$ \Delta_{x_{n+1} \leftarrow x_{n}}^{+} = x_{n+1} \setminus x_{n} $$
 
-$$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} = x_{n} \setminus x_{n+1} $$
+$$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
 
 ### Abstract Rewriting Systems
 
