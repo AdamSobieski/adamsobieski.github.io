@@ -96,7 +96,7 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 
 ### Graph Neural Networks
 
-[Graph neural network](https://en.wikipedia.org/wiki/Graph_neural_network)
+[Graph neural network](https://en.wikipedia.org/wiki/Graph_neural_network), [Hypergraph](https://en.wikipedia.org/wiki/Hypergraph)
 
 ### Mathematical Truth
 
