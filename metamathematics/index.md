@@ -106,7 +106,7 @@ would result in a combinatorial amount of expressions being added to sets $x_{i}
 
 ### Mathematical Truth
 
-For some systems, the sets of expressions $x_{i}$ can be interpreted as being intended to be "true" expressions.
+For some systems, the expressions in sets $x_{i}$ can be interpreted as being intended to be "true".
 
 ### Paradoxes
 
