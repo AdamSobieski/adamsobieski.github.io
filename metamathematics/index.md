@@ -4,7 +4,7 @@ title: Metamathematics
 
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
-### Iterated Computation of Sets of Expressions and Rules
+### Iterated Computation
 
 Let us consider a function, $C$, such that
 
