@@ -4,6 +4,22 @@ title: Metamathematics
 
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
+### Rules
+
+Rules could be expressed with a notation resembling:
+
+$$ e_{2} \stackrel{+}\leftarrow e_{1} $$
+
+$$ e_{3} \stackrel{+}\leftarrow e_{1}, e_{2} $$
+
+$$ e_{6}, e_{7} \stackrel{+}\leftarrow e_{4}, e_{5} $$
+
+Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference) should be carefully considered before being added to the types of systems under discussion. That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
+
+$$ e_{1} \wedge e_{2} \stackrel{+}\leftarrow e_{1}, e_{2} $$
+
+would result in a combinatorial amount of expressions being added to sets $x_{i}$ during each iteration.
+
 ### Iterated Computation
 
 Let us consider a function, $C$, such that
@@ -63,20 +79,6 @@ There are two deltas or differences to consider between the sets of mathematical
 $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{+} = x_{n+1} \setminus x_{n} $$
 
 $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} = x_{n} \setminus x_{n+1} $$
-
-### Rules
-
-Rules could be expressed with a notation resembling:
-
-$$ e_{2} \stackrel{+}\leftarrow e_{1} $$
-
-$$ e_{3} \stackrel{+}\leftarrow e_{1}, e_{2} $$
-
-Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference) should be carefully considered before being added to the types of systems under discussion. That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
-
-$$ e_{1} \wedge e_{2} \stackrel{+}\leftarrow e_{1}, e_{2} $$
-
-would result in a combinatorial amount of expressions being added to sets $x_{i}$ during each iteration.
 
 ### Abstract Rewriting Systems
 
