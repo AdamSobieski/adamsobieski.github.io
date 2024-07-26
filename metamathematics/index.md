@@ -74,7 +74,7 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} \subseteq r_{n}^{-}(x_{n}) $$
 
 Rules could be expressed in a manner resembling:
 
-$$ expr_{1} \in x_{i} \wedge expr_{2} in x_{i} \stackrel{+}\rightarrow expr_{3} \in x_{i+1} $$
+$$ expr_{1} \in x_{i} \wedge expr_{2} \in x_{i} \stackrel{+}\rightarrow expr_{3} \in x_{i+1} $$
 
 ### Abstract Rewriting Systems
 
