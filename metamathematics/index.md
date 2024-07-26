@@ -20,6 +20,10 @@ $$ e_{1} \wedge e_{2} \stackrel{+}\leftarrow e_{1}, e_{2} $$
 
 would result in a combinatorial amount of expressions being added to sets $x_{i}$ during each iteration.
 
+Note that a rule can preserve its inputs across its transformation:
+
+$$ e_{1}, e_{2} \stackrel{+}\leftarrow e_{1} $$
+
 ### Iterated Computation
 
 Let us consider a function, $C$, such that
