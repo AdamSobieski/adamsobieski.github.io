@@ -68,7 +68,7 @@ $$ \Delta_{x_{n} \rightarrow x_{n+1}}^{-} = x_{n} \setminus x_{n+1} $$
 
 Some rules could be expressed in a manner resembling:
 
-$$ expr_{3} \in x_{i+1} \stackrel{+}\leftarrow expr_{1} \in x_{i} \wedge expr_{2} \in x_{i} $$
+$$ e_{3} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} \wedge e_{2} \in x_{i} $$
 
 ### Abstract Rewriting Systems
 
