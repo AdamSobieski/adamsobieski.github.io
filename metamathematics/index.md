@@ -14,7 +14,11 @@ $$ e_{3} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i}, e_{2} \in x_{i} $$
 
 $$ e_{6} \in x_{i+1}, e_{7} \in x_{i+1} \stackrel{+}\leftarrow e_{4} \in x_{i}, e_{5} \in x_{i} $$
 
-In some cases, this notation can be simplified to:
+This notation is useful for cases where rules involve multiple input and/or output sets:
+
+$$ \rho_{2} \in r_{i+1}^{+} \stackrel{+}\leftarrow e_{1} \in x_{i}, \rho_{1} \in  r_{i}^{+} $$
+
+In some cases, when dealing with one set, this notation can be simplified to:
 
 $$ e_{2} \stackrel{+}\leftarrow e_{1} $$
 
