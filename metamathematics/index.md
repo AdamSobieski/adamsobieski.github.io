@@ -36,6 +36,18 @@ $$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
 would result in a combinatorial amount of expressions being added to sets $x_{i}$ during each iteration.
 
+Considering again the elaborated notation, we can also explore:
+
+$$ e_{2} \in x_{i+1} \leftarrow e_{1} \notin x_{i} $$
+
+$$ e_{2} \notin x_{i+1} \leftarrow e_{1} \in x_{i} $$
+
+Which, more succinctly, could be expressed:
+
+$$ e_{2} \leftarrow -e_{1} $$
+
+$$ -e_{2} \leftarrow e_{1} $$
+
 ### Iterated Computation
 
 Let us consider a function, $C$, such that
