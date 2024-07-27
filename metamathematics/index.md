@@ -4,6 +4,14 @@ title: Metamathematics
 
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
+### Expressions
+
+[Expression](https://en.wikipedia.org/wiki/Expression_(mathematics))
+
+### Variables
+
+[Variable](https://en.wikipedia.org/wiki/Variable_(mathematics)), [Variable](https://en.wikipedia.org/wiki/Variable_(computer_science)), [Free variables and bound variables](https://en.wikipedia.org/wiki/Free_variables_and_bound_variables), [Propositional variable](https://en.wikipedia.org/wiki/Propositional_variable), [Predicate variable](https://en.wikipedia.org/wiki/Predicate_variable), [Unification](https://en.wikipedia.org/wiki/Unification_(computer_science))
+
 ### Rules
 
 Rules can be expressed using a notation:
@@ -47,10 +55,6 @@ Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_infe
 $$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
 would result in a combinatorial amount of expressions being added to sets $x_{i}$ per iteration.
-
-### Variables and Unification
-
-[Variable](https://en.wikipedia.org/wiki/Variable_(mathematics)), [Variable](https://en.wikipedia.org/wiki/Variable_(computer_science)), [Free variables and bound variables](https://en.wikipedia.org/wiki/Free_variables_and_bound_variables), [Propositional variable](https://en.wikipedia.org/wiki/Propositional_variable), [Predicate variable](https://en.wikipedia.org/wiki/Predicate_variable), [Unification](https://en.wikipedia.org/wiki/Unification_(computer_science))
 
 ### Iterated Computation
 
