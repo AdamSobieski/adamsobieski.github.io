@@ -26,10 +26,6 @@ $$ e_{3} \leftarrow e_{1}, e_{2} $$
 
 $$ e_{6}, e_{7} \leftarrow e_{4}, e_{5} $$
 
-Note that rules can preserve their inputs across their transformations:
-
-$$ e_{1}, e_{2} \leftarrow e_{1} $$
-
 Considering again the elaborated notation, we can explore scenarios resembling:
 
 $$ e_{2} \in x_{i+1} \leftarrow e_{1} \notin x_{i} $$
@@ -41,6 +37,10 @@ Which, more succinctly, could be expressed:
 $$ e_{2} \leftarrow \overline{e_{1}} $$
 
 $$ \overline{e_{2}} \leftarrow e_{1} $$
+
+Note that rules can preserve their inputs across their transformations:
+
+$$ e_{1}, e_{2} \leftarrow e_{1} $$
 
 Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference) should be carefully considered before being added to the types of systems under discussion. That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
 
