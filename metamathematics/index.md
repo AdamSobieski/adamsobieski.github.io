@@ -10,7 +10,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ### Well-formedness
 
-[Well-formed formula](https://en.wikipedia.org/wiki/Well-formed_formula)
+[Well-defined expression](https://en.wikipedia.org/wiki/Well-defined_expression), [Well-formed formula](https://en.wikipedia.org/wiki/Well-formed_formula)
 
 ### Rules
 
