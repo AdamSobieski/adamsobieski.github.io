@@ -4,7 +4,7 @@ title: Metamathematics
 
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
-### Expressions
+## Expressions
 
 [Expression](https://en.wikipedia.org/wiki/Expression_(mathematics)), [Variable](https://en.wikipedia.org/wiki/Variable_(mathematics)), [Variable](https://en.wikipedia.org/wiki/Variable_(computer_science)), [Free variables and bound variables](https://en.wikipedia.org/wiki/Free_variables_and_bound_variables), [Propositional variable](https://en.wikipedia.org/wiki/Propositional_variable), [Predicate variable](https://en.wikipedia.org/wiki/Predicate_variable), [Unification](https://en.wikipedia.org/wiki/Unification_(computer_science))
 
@@ -12,7 +12,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 [Well-defined expression](https://en.wikipedia.org/wiki/Well-defined_expression), [Well-formed formula](https://en.wikipedia.org/wiki/Well-formed_formula)
 
-### Rules
+## Rules
 
 Rules can be expressed using a notation:
 
@@ -56,7 +56,7 @@ $$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
 would result in a combinatorial amount of expressions being added to sets $x_{i}$ per iteration.
 
-### Iterated Computation
+## Iterated Computation
 
 Let us consider a function, $C$, such that
 
@@ -116,47 +116,47 @@ $$ \Delta_{x_{n+1} \leftarrow x_{n}}^{+} = x_{n+1} \setminus x_{n} $$
 
 $$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
 
-### Abstract Rewriting Systems
+## Abstract Rewriting Systems
 
 [Rewriting](https://en.wikipedia.org/wiki/Rewriting), [Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
 
-### Lindenmayer Systems
+## Lindenmayer Systems
 
 [L-system](https://en.wikipedia.org/wiki/L-system)
 
-### Rule Induction
+## Rule Induction
 
 [Rule induction](https://en.wikipedia.org/wiki/Rule_induction)
 
-### Grammar Induction
+## Grammar Induction
 
 [Grammar induction](https://en.wikipedia.org/wiki/Grammar_induction), [Grammar-based code](https://en.wikipedia.org/wiki/Grammar-based_code)
 
-### Tree Automata
+## Tree Automata
 
 [Tree automaton](https://en.wikipedia.org/wiki/Tree_automaton)
 
-### Reverse Mathematics
+## Reverse Mathematics
 
 [Reverse mathematics](https://en.wikipedia.org/wiki/Reverse_mathematics)
 
-### Differentiable Self-organizing Systems
+## Differentiable Self-organizing Systems
 
 [https://distill.pub/2020/selforg/](https://distill.pub/2020/selforg/), [https://distill.pub/2020/growing-ca/](https://distill.pub/2020/growing-ca/)
 
-### Graph Neural Networks
+## Graph Neural Networks
 
 [Graph neural network](https://en.wikipedia.org/wiki/Graph_neural_network), [Hypergraph](https://en.wikipedia.org/wiki/Hypergraph)
 
-### Mathematical Truth
+## Mathematical Truth
 
 For some systems, the expressions in sets $x_{i}$ can be interpreted as being intended to be "true".
 
-### Paradoxes
+## Paradoxes
 
 [Paradox](https://en.wikipedia.org/wiki/Paradox), [Paradoxes and Contemporary Logic](https://plato.stanford.edu/entries/paradoxes-contemporary-logic/), [Self-reference and Paradox](https://plato.stanford.edu/entries/self-reference/)
 
-### Bibliography
+## Bibliography
 
 Silver, Charles L. _From Symbolic Logic... To Mathematical Logic_. Dubuque, IA: Brown (William C.), 1994.
 
