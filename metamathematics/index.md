@@ -48,6 +48,10 @@ $$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
 would result in a combinatorial amount of expressions being added to sets $x_{i}$ per iteration.
 
+### Variables and Unification
+
+[Variable](https://en.wikipedia.org/wiki/Variable_(mathematics)), [Unification](https://en.wikipedia.org/wiki/Unification_(computer_science))
+
 ### Iterated Computation
 
 Let us consider a function, $C$, such that
@@ -110,7 +114,7 @@ $$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
 
 ### Abstract Rewriting Systems
 
-[Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
+[Rewriting](https://en.wikipedia.org/wiki/Rewriting), [Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
 
 ### Lindenmayer Systems
 
