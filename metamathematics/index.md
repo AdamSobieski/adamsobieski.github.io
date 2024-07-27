@@ -148,6 +148,10 @@ $$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
 
 [Graph neural network](https://en.wikipedia.org/wiki/Graph_neural_network), [Hypergraph](https://en.wikipedia.org/wiki/Hypergraph)
 
+## Attention
+
+[Attention](https://en.wikipedia.org/wiki/Attention_(machine_learning))
+
 ## Mathematical Truth
 
 For some systems, the expressions in sets $x_{i}$ can be interpreted as being intended to be "true".
