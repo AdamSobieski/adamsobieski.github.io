@@ -8,31 +8,31 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 Rules can be expressed using a notation:
 
-$$ e_{2} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i} $$
+$$ e_{2} \in x_{i+1} \leftarrow e_{1} \in x_{i} $$
 
-$$ e_{3} \in x_{i+1} \stackrel{+}\leftarrow e_{1} \in x_{i}, e_{2} \in x_{i} $$
+$$ e_{3} \in x_{i+1} \leftarrow e_{1} \in x_{i}, e_{2} \in x_{i} $$
 
-$$ e_{6} \in x_{i+1}, e_{7} \in x_{i+1} \stackrel{+}\leftarrow e_{4} \in x_{i}, e_{5} \in x_{i} $$
+$$ e_{6} \in x_{i+1}, e_{7} \in x_{i+1} \leftarrow e_{4} \in x_{i}, e_{5} \in x_{i} $$
 
 This notation is useful for cases where rules involve multiple input and/or output sets:
 
-$$ \rho_{2} \in r_{i+1}^{+} \stackrel{+}\leftarrow e_{1} \in x_{i}, \rho_{1} \in  r_{i}^{+} $$
+$$ \rho_{2} \in r_{i+1}^{+} \leftarrow e_{1} \in x_{i}, \rho_{1} \in  r_{i}^{+} $$
 
 In some cases, when the sets being dealt with are clear in a context, this notation can be simplified to:
 
-$$ e_{2} \stackrel{+}\leftarrow e_{1} $$
+$$ e_{2} \leftarrow e_{1} $$
 
-$$ e_{3} \stackrel{+}\leftarrow e_{1}, e_{2} $$
+$$ e_{3} \leftarrow e_{1}, e_{2} $$
 
-$$ e_{6}, e_{7} \stackrel{+}\leftarrow e_{4}, e_{5} $$
+$$ e_{6}, e_{7} \leftarrow e_{4}, e_{5} $$
 
 Note that rules can preserve their inputs across their transformations:
 
-$$ e_{1}, e_{2} \stackrel{+}\leftarrow e_{1} $$
+$$ e_{1}, e_{2} \leftarrow e_{1} $$
 
 Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference) should be carefully considered before being added to the types of systems under discussion. That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
 
-$$ e_{1}, e_{2}, e_{1} \wedge e_{2} \stackrel{+}\leftarrow e_{1}, e_{2} $$
+$$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
 would result in a combinatorial amount of expressions being added to sets $x_{i}$ during each iteration.
 
