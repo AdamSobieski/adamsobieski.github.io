@@ -8,8 +8,6 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 [Expression](https://en.wikipedia.org/wiki/Expression_(mathematics)), [Variable](https://en.wikipedia.org/wiki/Variable_(mathematics)), [Variable](https://en.wikipedia.org/wiki/Variable_(computer_science)), [Free variables and bound variables](https://en.wikipedia.org/wiki/Free_variables_and_bound_variables), [Propositional variable](https://en.wikipedia.org/wiki/Propositional_variable), [Predicate variable](https://en.wikipedia.org/wiki/Predicate_variable), [Unification](https://en.wikipedia.org/wiki/Unification_(computer_science))
 
-### Well-formedness
-
 [Well-defined expression](https://en.wikipedia.org/wiki/Well-defined_expression), [Well-formed formula](https://en.wikipedia.org/wiki/Well-formed_formula)
 
 ## Rules
