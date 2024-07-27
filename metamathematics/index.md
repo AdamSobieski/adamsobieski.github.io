@@ -38,9 +38,9 @@ $$ e_{2} \notin x_{i+1} \leftarrow e_{1} \in x_{i} $$
 
 Which, more succinctly, could be expressed:
 
-$$ e_{2} \leftarrow -e_{1} $$
+$$ e_{2} \leftarrow \overline{e_{1}} $$
 
-$$ -e_{2} \leftarrow e_{1} $$
+$$ \overline{e_{2}} \leftarrow e_{1} $$
 
 Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_inference) should be carefully considered before being added to the types of systems under discussion. That is, something like [conjunction introduction](https://en.wikipedia.org/wiki/Conjunction_introduction):
 
