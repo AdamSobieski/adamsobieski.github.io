@@ -56,6 +56,12 @@ $$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
 would result in a combinatorial amount of expressions being added per iteration.
 
+Let us define the cardinality of a rule as the cardinality of the set of expressions that it produces. For each time that $e_{1}$ matches an expression in $X_{i}$, output expressions are produced, and the number of distinct expressions is the cardinality of the rule application.
+
+$$ \left\lvert e_{2} \in X_{i+1} \leftarrow e_{1} \in X_{i} \right\rvert $$
+
+If a rule's antecedent does not match any expressions, then it produces the empty set, $\emptyset$, the cardinality of which is $0$.
+
 ## Iterated Computation
 
 Let us consider a function, $C$, such that
@@ -125,6 +131,14 @@ $$ \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert = \left\lvert 
 From which we can obtain:
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert X_{n} \right\rvert + \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \right\rvert - \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert $$
+
+Let us consider that:
+
+$$ \left\lvert R_{n}^{+}(X_{n}) \setminus R_{n}^{-}(X_{n}) \right\rvert = \left\lvert X_{n} \right\rvert + \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \right\rvert - \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert $$
+
+which is equivalent to:
+
+$$ \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert =  \left\lvert X_{n} \right\rvert + \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \right\rvert - \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert $$
 
 ## Abstract Rewriting Systems
 
