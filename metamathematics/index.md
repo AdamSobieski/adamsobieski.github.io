@@ -68,7 +68,7 @@ $$ rank_a(e_{2} \leftarrow e_{1}) = 1$$
 
 $$ rank_a(e_{3} \leftarrow e_{1}, e_{2}) = 2 $$
 
-The number of comparisons or matches which need to be explored, computationally, by the application of a rule, $rho$, on a set of expressions, $X$, is the cardinality of the set $X$ raised to the power $rank_{a}(\rho)$:
+The number of comparisons or matches which need to be explored, computationally, by the application of a rule, $\rho$, on a set of expressions, $X$, is the cardinality of the set $X$ raised to the power $rank_{a}(\rho)$:
 
 $$ \left\lvert X \right\rvert^{rank_{a}(\rho)} $$
 
