@@ -140,8 +140,6 @@ $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert 
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert \bigcup_{\rho_{nj}^{+} \in R_{n}^{+}} \rho_{nj}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
 
-$$ \left\lvert X_{n+1} \right\rvert = \left( \sum_{j} \left\lvert \rho_{nj}^{+}(X_{n}) \right\rvert - \frac{1}{2} \sum_{k}\sum_{l} \left\lvert \rho_{nk}^{+}(X_{n}) \cap \rho_{nl}^{+}(X_{n}) \right\rvert \right) - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
-
 $$ \vdots $$
 
 ## Abstract Rewriting Systems
