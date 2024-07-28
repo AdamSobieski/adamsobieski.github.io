@@ -118,9 +118,9 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
 With cardinalities:
 
-$$ \card{\Delta_{X_{n+1} \leftarrow X_{n}}^{+}} = \card{X_{n+1}} - \card{X_{n+1} \cap X_{n}} $$
+$$ \lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \rvert = \lvert X_{n+1} \rvert - \lvert X_{n+1} \cap X_{n} \rvert $$
 
-$$ \card{\Delta_{X_{n+1} \leftarrow X_{n}}^{-}} = \card{X_{n}} - \card{X_{n+1} \cap X_{n}} $$
+$$ \lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \rvert = \lvert X_{n} \rvert - \lvert X_{n+1} \cap X_{n} \rvert $$
 
 ## Abstract Rewriting Systems
 
