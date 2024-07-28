@@ -70,7 +70,7 @@ $$ \left< X_{n}, R_{n}^{+}, R_{n}^{-}, M_{n}^{++}, M_{n}^{+-}, M_{n}^{-+}, M_{n}
 
 Let us use a syntax convention that $R_{n}^{+}( X_{n})$ means those expressions produced by applying the rules in set $R_{n}^{+}$ to a set of mathematical expressions $X_{n}$, and a syntax convention that $M_{n}^{++}(X_{n}, R_{n}^{+}, R_{n}^{-})$ means those rules produced by applying the rules in set $M_{n}^{++}$ to a set of mathematical expressions $X_{n}$ and sets of rules $R_{n}^{+}$ and $R_{n}^{-}$.
 
-Let the resulting set of expressions from a set of rules, $R_{i}^{+}$, applied to a set of mathematical expressions, $X_{i}$, be the union of the resulting set from each individual rule, $\rho_{ij}^{+}$, contained in that set of rules, $R_{i}^{+}$, applied to $X_{i}$.
+Let the resulting set of expressions from a set of rules, $R_{i}^{+}$, applied to a set of mathematical expressions, $x$, be the union of the resulting set from each individual rule, $\rho_{ij}^{+}$, contained in that set of rules, $R_{i}^{+}$, applied to that set, $x$.
 
 $$ R_{i}^{+}(x) = \bigcup_{\rho_{ij}^{+} \in R_{i}^{+}} \rho_{ij}^{+}(x) $$
 
