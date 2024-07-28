@@ -76,7 +76,7 @@ $$ rank_{R_{i}^{+}}(\rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1
 
 The number of comparisons or matches which need to be explored, computationally, by the application of a rule, $\rho$, is the product of the cardinality each involved set raised to the power of the rank of the rule's antecedent with respect to that set.
 
-$$ f(e_{3} \in X_{i+1} \leftarrow e_{1} \in X_{i}, e_{2} \in X_{i}) = \left\lvert X_{i} \right\rvert^{2} = $$
+$$ f(e_{3} \in X_{i+1} \leftarrow e_{1} \in X_{i}, e_{2} \in X_{i}) = \left\lvert X_{i} \right\rvert^{2} $$
 
 $$ f(\rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1} \in  R_{i}^{+}) = \left\lvert X_{i} \right\rvert \left\lvert R_{i}^{+} \right\rvert $$
 
