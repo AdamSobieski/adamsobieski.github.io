@@ -116,6 +116,12 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{+} = X_{n+1} \setminus X_{n} $$
 
 $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
+With cardinalities:
+
+$$ \card{\Delta_{X_{n+1} \leftarrow X_{n}}^{+}} = \card{X_{n+1}} - \card{X_{n+1} \cap X_{n}} $$
+
+$$ \card{\Delta_{X_{n+1} \leftarrow X_{n}}^{-}} = \card{X_{n}} - \card{X_{n+1} \cap X_{n}} $$
+
 ## Abstract Rewriting Systems
 
 [Rewriting](https://en.wikipedia.org/wiki/Rewriting), [Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
