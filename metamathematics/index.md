@@ -72,19 +72,19 @@ Let us use a syntax convention that $r_{n}^{+}( x_{n})$ means those expressions 
 
 Let the resulting set of expressions from a set of rules, $r_{i}^{+}$, applied to a set of mathematical expressions, $x_{i}$, be the union of the resulting set from each individual rule, $\rho_{ij}^{+}$, contained in that set of rules, $r_{i}^{+}$, applied to $x_{i}$.
 
-$$ r_{i}^{+}(x_{i}) = \bigcup_{\rho_{ij}^{+} \in r_{i}^{+}} \rho_{ij}^{+}(x_{i}) $$
+$$ r_{i}^{+}(x) = \bigcup_{\rho_{ij}^{+} \in r_{i}^{+}} \rho_{ij}^{+}(x) $$
 
-$$ r_{i}^{-}(x_{i}) = \bigcup_{\rho_{ij}^{-} \in r_{i}^{-}} \rho_{ij}^{-}(x_{i}) $$
+$$ r_{i}^{-}(x) = \bigcup_{\rho_{ij}^{-} \in r_{i}^{-}} \rho_{ij}^{-}(x) $$
 
 Similarly with the set of rules $m_{i}^{++}$ and the individual rules, $\mu_{ij}^{++}$, contained in that set.
 
-$$ m_{i}^{++}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{++} \in m_{i}^{++}} \mu_{ij}^{++}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
+$$ m_{i}^{++}(x, r^{+}, r^{-}) = \bigcup_{\mu_{ij}^{++} \in m_{i}^{++}} \mu_{ij}^{++}(x, r^{+}, r^{-}) $$
 
-$$ m_{i}^{+-}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{+-} \in m_{i}^{+-}} \mu_{ij}^{+-}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
+$$ m_{i}^{+-}(x, r^{+}, r^{-}) = \bigcup_{\mu_{ij}^{+-} \in m_{i}^{+-}} \mu_{ij}^{+-}(x, r^{+}, r^{-}) $$
 
-$$ m_{i}^{-+}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{-+} \in m_{i}^{-+}} \mu_{ij}^{-+}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
+$$ m_{i}^{-+}(x, r^{+}, r^{-}) = \bigcup_{\mu_{ij}^{-+} \in m_{i}^{-+}} \mu_{ij}^{-+}(x, r^{+}, r^{-}) $$
 
-$$ m_{i}^{--}(x_{i}, r_{i}^{+}, r_{i}^{-}) = \bigcup_{\mu_{ij}^{--} \in m_{i}^{--}} \mu_{ij}^{--}(x_{i}, r_{i}^{+}, r_{i}^{-}) $$
+$$ m_{i}^{--}(x, r^{+}, r^{-}) = \bigcup_{\mu_{ij}^{--} \in m_{i}^{--}} \mu_{ij}^{--}(x, r^{+}, r^{-}) $$
 
 Let the following equations describe $C$:
 
@@ -164,7 +164,7 @@ Similarly, [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_syste
 
 ## Truth and Paradox
 
-For some systems, the expressions in sets $x_{i}$ can be interpreted as being intended to be "true".
+For some systems, the expressions in sets $x$ can be interpreted as being intended to be "true".
 
 [Truth](https://en.wikipedia.org/wiki/Truth), [Paradox](https://en.wikipedia.org/wiki/Paradox), [Paradoxes and Contemporary Logic](https://plato.stanford.edu/entries/paradoxes-contemporary-logic/), [Self-reference and Paradox](https://plato.stanford.edu/entries/self-reference/)
 
