@@ -142,7 +142,7 @@ $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert 
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \cup R_{n}^{-}(X_{n}) \right\rvert - \left\lvert R_{n}^{-}(X_{n}) \right\rvert$$
 
-Next, substituting in that $R_{n}^{+}$ and $R_{n}^{-}$ are each unions of sets of expressions produced by rule applications and using the [inclusion-exclusion principle](https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle):
+Next, substituting in that $R_{n}^{+}(X_{n})$ and $R_{n}^{-}(X_{n})$ are each unions of sets of expressions produced by rule applications and using the [inclusion-exclusion principle](https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle):
 
 $$ \dots $$
 
