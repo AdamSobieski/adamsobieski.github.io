@@ -56,11 +56,11 @@ $$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
 would result in a combinatorial amount of expressions being added per iteration.
 
-Let us define the cardinality of a rule application as the cardinality of the set of expressions that it produces. For each time that $e_{1}$ matches an expression in $X_{i}$, output expressions are produced, and the number of distinct expressions is the cardinality of the rule application.
+Let us define the cardinality of a rule application as the cardinality of the set of expressions that it produces. If a rule's antecedent does not match any expressions, or if it otherwise produces the empty set, $\emptyset$, then the cardinality of that rule application is $0$.
 
 $$ \left\lvert e_{2} \in X_{i+1} \leftarrow e_{1} \in X_{i} \right\rvert $$
 
-If a rule's antecedent does not match any expressions, then it produces the empty set, $\emptyset$, the cardinality of which is $0$.
+For each time that $e_{1}$ matches an expression in $X_{i}$, output expressions are produced, and the number of distinct expressions $e_{2}$ is the cardinality of the rule application.
 
 ## Iterated Computation
 
