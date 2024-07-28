@@ -124,9 +124,9 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
 With cardinalities:
 
-$$ \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \right\rvert = \left\lvert X_{n+1} \right\rvert - \left\lvert X_{n+1} \cap X_{n} \right\rvert $$
+$$ \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \right\rvert = \left\lvert X_{n+1} \right\rvert - \left\lvert X_{n+1} \cap X_{n} \right\rvert = \left\lvert X_{n+1} \cup X_{n} \right\rvert - \left\lvert X_{n} \right\rvert $$
 
-$$ \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert = \left\lvert X_{n} \right\rvert - \left\lvert X_{n+1} \cap X_{n} \right\rvert $$
+$$ \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert = \left\lvert X_{n} \right\rvert - \left\lvert X_{n+1} \cap X_{n} \right\rvert = \left\lvert X_{n+1} \cup X_{n} \right\rvert - \left\lvert X_{n+1} \right\rvert $$
 
 From which we can obtain:
 
@@ -137,8 +137,6 @@ Let us consider that:
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \setminus R_{n}^{-}(X_{n}) \right\rvert $$
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
-
-$$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left( \left\lvert R_{n}^{+}(X_{n}) \right\rvert + \left\lvert R_{n}^{-}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cup R_{n}^{-}(X_{n}) \right\rvert \right)$$
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \cup R_{n}^{-}(X_{n}) \right\rvert - \left\lvert R_{n}^{-}(X_{n}) \right\rvert$$
 
