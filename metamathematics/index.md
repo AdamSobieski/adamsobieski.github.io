@@ -122,6 +122,10 @@ $$ \lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \rvert = \lvert X_{n+1} \rvert -
 
 $$ \lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \rvert = \lvert X_{n} \rvert - \lvert X_{n+1} \cap X_{n} \rvert $$
 
+From which we can obtain:
+
+$$ \lvert X_{n+1} \rvert = \lvert X_{n} \rvert + \lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \rvert - \lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \rvert $$
+
 ## Abstract Rewriting Systems
 
 [Rewriting](https://en.wikipedia.org/wiki/Rewriting), [Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
