@@ -160,13 +160,11 @@ That is, only a subset of the rules and the expressions would need to be "expres
 
 ## Multi-agent Systems
 
-[Multi-agent system](https://en.wikipedia.org/wiki/Multi-agent_system)
+Similarly, [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could coordinate specialized, redundant agents which operate upon graphs of or sets of expressions and rules.
 
-## Mathematical Truth
+## Truth and Paradoxes
 
 For some systems, the expressions in sets $x_{i}$ can be interpreted as being intended to be "true".
-
-## Paradoxes
 
 [Paradox](https://en.wikipedia.org/wiki/Paradox), [Paradoxes and Contemporary Logic](https://plato.stanford.edu/entries/paradoxes-contemporary-logic/), [Self-reference and Paradox](https://plato.stanford.edu/entries/self-reference/)
 
