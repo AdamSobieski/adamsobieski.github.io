@@ -150,7 +150,7 @@ $$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
 
 ## Systems Biology
 
-What if artificial-intelligence systems performing or observing the iterated computation of sets of rules upon sets of expressions could focus computation, instead of on entire sets of rules and entire sets of expressions, on contextually relevant subsets of rules and on contextually relevant subsets of expressions?
+What if artificial-intelligence systems controlling the iterated computation of sets of rules upon sets of expressions could focus computation, from operating upon entire sets of rules and entire sets of expressions, to operating upon contextually relevant subsets of rules and on contextually relevant subsets of expressions?
 
 Let us consider a task of reconstructing portions of graphs of or sets of expressions and rules after perturbative events. One can observe [differentiable cellular automata](https://distill.pub/2020/growing-ca/) for an example of a self-organizing system capable of self-repair.
 
