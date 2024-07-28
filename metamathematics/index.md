@@ -126,7 +126,7 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
 ## Knowledge Graph Completion
 
-[https://arxiv.org/abs/2302.05019](https://arxiv.org/abs/2302.05019)
+Chen, Zhe, Yuehan Wang, Bin Zhao, Jing Cheng, Xin Zhao, and Zongtao Duan. "Knowledge graph completion: A review." _IEEE Access_ 8 (2020): 192435-192456. [[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9220143)]
 
 ## Rule Induction
 
