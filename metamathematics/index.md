@@ -158,11 +158,11 @@ An analogy can be drawn with the [regulation of gene expression](https://en.wiki
 
 The gist is that only a subset of the rules would need to be "expressed", and thus computed, at each iteration.
 
-$$ x_{n+1} = r_{n}^{+}'(x_{n}) \setminus r_{n}^{-}'(x_{n}) $$
+$$ x_{n+1} = r_{n}^{+\prime}(x_{n}) \setminus r_{n}^{-\prime}(x_{n}) $$
 
-$$ r_{n+1}^{+} = m_{0}^{++}'(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{+-}'(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ r_{n+1}^{+} = m_{0}^{++\prime}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{+-\prime}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
-$$ r_{n+1}^{-} = m_{0}^{-+}'(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{--}'(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ r_{n+1}^{-} = m_{0}^{-+\prime}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{--\prime}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
 ## Mathematical Truth
 
