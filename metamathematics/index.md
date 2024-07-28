@@ -16,15 +16,15 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 Rules can be expressed using a notation:
 
-$$ e_{2} \in x_{i+1} \leftarrow e_{1} \in x_{i} $$
+$$ e_{2} \in X_{i+1} \leftarrow e_{1} \in X_{i} $$
 
-$$ e_{3} \in x_{i+1} \leftarrow e_{1} \in x_{i}, e_{2} \in x_{i} $$
+$$ e_{3} \in X_{i+1} \leftarrow e_{1} \in X_{i}, e_{2} \in X_{i} $$
 
-$$ e_{6} \in x_{i+1}, e_{7} \in x_{i+1} \leftarrow e_{4} \in x_{i}, e_{5} \in x_{i} $$
+$$ e_{6} \in X_{i+1}, e_{7} \in X_{i+1} \leftarrow e_{4} \in X_{i}, e_{5} \in X_{i} $$
 
 This notation is useful for cases where rules involve multiple input and/or output sets:
 
-$$ \rho_{2} \in r_{i+1}^{+} \leftarrow e_{1} \in x_{i}, \rho_{1} \in  r_{i}^{+} $$
+$$ \rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1} \in  R_{i}^{+} $$
 
 In some cases, when the sets being dealt with are clear in a context, this notation can be simplified to:
 
@@ -36,9 +36,9 @@ $$ e_{6}, e_{7} \leftarrow e_{4}, e_{5} $$
 
 Considering again the elaborated notation, we can explore scenarios resembling:
 
-$$ e_{2} \in x_{i+1} \leftarrow e_{1} \notin x_{i} $$
+$$ e_{2} \in X_{i+1} \leftarrow e_{1} \notin X_{i} $$
 
-$$ e_{2} \notin x_{i+1} \leftarrow e_{1} \in x_{i} $$
+$$ e_{2} \notin X_{i+1} \leftarrow e_{1} \in X_{i} $$
 
 Which, more succinctly, could be expressed:
 
@@ -54,67 +54,67 @@ Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_infe
 
 $$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
-would result in a combinatorial amount of expressions being added to sets $x_{i}$ per iteration.
+would result in a combinatorial amount of expressions being added to sets $X_{i}$ per iteration.
 
 ## Iterated Computation
 
 Let us consider a function, $C$, such that
 
-$$ \left< x_{n+1}, r_{n+1}^{+}, r_{n+1}^{-}, m_{n+1}^{++}, m_{n+1}^{+-}, m_{n+1}^{-+}, m_{n+1}^{--} \right> = C\left( \left< x_{n}, r_{n}^{+}, r_{n}^{-}, m_{n}^{++}, m_{n}^{+-}, m_{n}^{-+}, m_{n}^{--} \right> \right) $$
+$$ \left< X_{n+1}, R_{n+1}^{+}, R_{n+1}^{-}, M_{n+1}^{++}, M_{n+1}^{+-}, M_{n+1}^{-+}, M_{n+1}^{--} \right> = C\left( \left< X_{n}, R_{n}^{+}, R_{n}^{-}, M_{n}^{++}, M_{n}^{+-}, M_{n}^{-+}, M_{n}^{--} \right> \right) $$
 
-where $x_{i}$ are sets of mathematical expressions, $r_{i}^{+}$ are sets of rules for adding mathematical expressions, $r_{i}^{-}$ are sets of rules for removing mathematical expressions, $m_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $m_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $m_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $m_{i}^{\-\-}$ are sets of rules for removing rules from sets of subtractive rules.
+where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rules for adding mathematical expressions, $R_{i}^{-}$ are sets of rules for removing mathematical expressions, $M_{i}^{++}$ are sets of rules for adding rules to sets of additive rules, $M_{i}^{+-}$ are sets of rules for removing rules from sets of additive rules, $M_{i}^{-+}$ are sets of rules for adding rules to sets of subtractive rules, and $M_{i}^{\-\-}$ are sets of rules for removing rules from sets of subtractive rules.
 
 Per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_function), we can write:
 
-$$ \left< x_{N}, r_{N}^{+}, r_{N}^{-}, m_{N}^{++}, m_{N}^{+-}, m_{N}^{-+}, m_{N}^{--} \right> = C^{N}\left( \left< x_{0}, r_{0}^{+}, r_{0}^{-}, m_{0}^{++}, m_{0}^{+-}, m_{0}^{-+}, m_{0}^{--} \right> \right) $$
+$$ \left< X_{N}, R_{N}^{+}, R_{N}^{-}, M_{N}^{++}, M_{N}^{+-}, M_{N}^{-+}, M_{N}^{--} \right> = C^{N}\left( \left< X_{0}, R_{0}^{+}, R_{0}^{-}, M_{0}^{++}, M_{0}^{+-}, M_{0}^{-+}, M_{0}^{--} \right> \right) $$
 
-Let us use a syntax convention that $r_{n}^{+}( x_{n})$ means those expressions produced by applying the rules in set $r_{n}^{+}$ to a set of mathematical expressions $x_{n}$, and a syntax convention that $m_{n}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-})$ means those rules produced by applying the rules in set $m_{n}^{++}$ to a set of mathematical expressions $x_{n}$ and sets of rules $r_{n}^{+}$ and $r_{n}^{-}$.
+Let us use a syntax convention that $R_{n}^{+}( X_{n})$ means those expressions produced by applying the rules in set $R_{n}^{+}$ to a set of mathematical expressions $X_{n}$, and a syntax convention that $M_{n}^{++}(X_{n}, R_{n}^{+}, R_{n}^{-})$ means those rules produced by applying the rules in set $M_{n}^{++}$ to a set of mathematical expressions $X_{n}$ and sets of rules $R_{n}^{+}$ and $R_{n}^{-}$.
 
-Let the resulting set of expressions from a set of rules, $r_{i}^{+}$, applied to a set of mathematical expressions, $x_{i}$, be the union of the resulting set from each individual rule, $\rho_{ij}^{+}$, contained in that set of rules, $r_{i}^{+}$, applied to $x_{i}$.
+Let the resulting set of expressions from a set of rules, $R_{i}^{+}$, applied to a set of mathematical expressions, $X_{i}$, be the union of the resulting set from each individual rule, $\rho_{ij}^{+}$, contained in that set of rules, $R_{i}^{+}$, applied to $X_{i}$.
 
-$$ r_{i}^{+}(x) = \bigcup_{\rho_{ij}^{+} \in r_{i}^{+}} \rho_{ij}^{+}(x) $$
+$$ R_{i}^{+}(x) = \bigcup_{\rho_{ij}^{+} \in R_{i}^{+}} \rho_{ij}^{+}(x) $$
 
-$$ r_{i}^{-}(x) = \bigcup_{\rho_{ij}^{-} \in r_{i}^{-}} \rho_{ij}^{-}(x) $$
+$$ R_{i}^{-}(x) = \bigcup_{\rho_{ij}^{-} \in R_{i}^{-}} \rho_{ij}^{-}(x) $$
 
-Similarly with the set of rules $m_{i}^{++}$ and the individual rules, $\mu_{ij}^{++}$, contained in that set.
+Similarly with the set of rules $M_{i}^{++}$ and the individual rules, $\mu_{ij}^{++}$, contained in that set.
 
-$$ m_{i}^{++}(x, y, z) = \bigcup_{\mu_{ij}^{++} \in m_{i}^{++}} \mu_{ij}^{++}(x, y, z) $$
+$$ M_{i}^{++}(x, y, z) = \bigcup_{\mu_{ij}^{++} \in M_{i}^{++}} \mu_{ij}^{++}(x, y, z) $$
 
-$$ m_{i}^{+-}(x, y, z) = \bigcup_{\mu_{ij}^{+-} \in m_{i}^{+-}} \mu_{ij}^{+-}(x, y, z) $$
+$$ M_{i}^{+-}(x, y, z) = \bigcup_{\mu_{ij}^{+-} \in M_{i}^{+-}} \mu_{ij}^{+-}(x, y, z) $$
 
-$$ m_{i}^{-+}(x, y, z) = \bigcup_{\mu_{ij}^{-+} \in m_{i}^{-+}} \mu_{ij}^{-+}(x, y, z) $$
+$$ M_{i}^{-+}(x, y, z) = \bigcup_{\mu_{ij}^{-+} \in M_{i}^{-+}} \mu_{ij}^{-+}(x, y, z) $$
 
-$$ m_{i}^{--}(x, y, z) = \bigcup_{\mu_{ij}^{--} \in m_{i}^{--}} \mu_{ij}^{--}(x, y, z) $$
+$$ M_{i}^{--}(x, y, z) = \bigcup_{\mu_{ij}^{--} \in M_{i}^{--}} \mu_{ij}^{--}(x, y, z) $$
 
 Let the following equations describe $C$:
 
-$$ x_{n+1} = r_{n}^{+}(x_{n}) \setminus r_{n}^{-}(x_{n}) $$
+$$ X_{n+1} = R_{n}^{+}(X_{n}) \setminus R_{n}^{-}(X_{n}) $$
 
-$$ r_{n+1}^{+} = m_{n}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{n}^{+-}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ R_{n+1}^{+} = M_{n}^{++}(X_{n}, R_{n}^{+}, R_{n}^{-}) \setminus M_{n}^{+-}(X_{n}, R_{n}^{+}, R_{n}^{-}) $$
 
-$$ r_{n+1}^{-} = m_{n}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{n}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ R_{n+1}^{-} = M_{n}^{-+}(X_{n}, R_{n}^{+}, R_{n}^{-}) \setminus M_{n}^{--}(X_{n}, R_{n}^{+}, R_{n}^{-}) $$
 
-$$ m_{n+1}^{++} = m_{n}^{++} $$
+$$ M_{n+1}^{++} = M_{n}^{++} $$
 
-$$ m_{n+1}^{+-} = m_{n}^{+-} $$
+$$ M_{n+1}^{+-} = M_{n}^{+-} $$
 
-$$ m_{n+1}^{-+} = m_{n}^{-+} $$
+$$ M_{n+1}^{-+} = M_{n}^{-+} $$
 
-$$ m_{n+1}^{--} = m_{n}^{--} $$
+$$ M_{n+1}^{--} = M_{n}^{--} $$
 
 This set of equations can be simplified:
 
-$$ x_{n+1} = r_{n}^{+}(x_{n}) \setminus r_{n}^{-}(x_{n}) $$
+$$ X_{n+1} = R_{n}^{+}(X_{n}) \setminus R_{n}^{-}(X_{n}) $$
 
-$$ r_{n+1}^{+} = m_{0}^{++}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{+-}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ R_{n+1}^{+} = M_{0}^{++}(X_{n}, R_{n}^{+}, R_{n}^{-}) \setminus M_{0}^{+-}(X_{n}, R_{n}^{+}, R_{n}^{-}) $$
 
-$$ r_{n+1}^{-} = m_{0}^{-+}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{--}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+$$ R_{n+1}^{-} = M_{0}^{-+}(X_{n}, R_{n}^{+}, R_{n}^{-}) \setminus M_{0}^{--}(X_{n}, R_{n}^{+}, R_{n}^{-}) $$
 
-There are two deltas or differences to consider between the sets of mathematical expressions $x_{n}$ and $x_{n+1}$. Firstly, there is the set of mathematical expressions that were added to $x_{n}$ to result in $x_{n+1}$. Secondly, there is the set of mathematical expressions that were removed from $x_{n}$ to result in $x_{n+1}$.
+There are two deltas or differences to consider between the sets of mathematical expressions $X_{n}$ and $X_{n+1}$. Firstly, there is the set of mathematical expressions that were added to $X_{n}$ to result in $X_{n+1}$. Secondly, there is the set of mathematical expressions that were removed from $X_{n}$ to result in $X_{n+1}$.
 
-$$ \Delta_{x_{n+1} \leftarrow x_{n}}^{+} = x_{n+1} \setminus x_{n} $$
+$$ \Delta_{X_{n+1} \leftarrow X_{n}}^{+} = X_{n+1} \setminus X_{n} $$
 
-$$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
+$$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
 ## Abstract Rewriting Systems
 
@@ -164,7 +164,7 @@ Similarly, [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_syste
 
 ## Truth and Paradox
 
-For some systems, the expressions in sets $x$ can be interpreted as being intended to be "true".
+For some systems, the expressions in sets $X$ can be interpreted as being intended to be "true".
 
 [Truth](https://en.wikipedia.org/wiki/Truth), [Paradox](https://en.wikipedia.org/wiki/Paradox), [Paradoxes and Contemporary Logic](https://plato.stanford.edu/entries/paradoxes-contemporary-logic/), [Self-reference and Paradox](https://plato.stanford.edu/entries/self-reference/)
 
