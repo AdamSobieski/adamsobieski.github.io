@@ -62,6 +62,12 @@ $$ \left\lvert e_{2} \in X_{i+1} \leftarrow e_{1} \in X_{i} \right\rvert $$
 
 For each time that $e_{1}$ matches an expression in $X_{i}$, output expressions are produced, and the number of distinct expressions $e_{2}$ is the cardinality of the rule application.
 
+Towards analyzing the the computational complexities of rules, we can consider the ranks of their antecedents and consequents. Let the rank of a rule's antecedent be the number of comma-delimited expressions in it.
+
+$$ rank_a(e_{2} \leftarrow e_{1}) = 1$$
+
+$$ rank_a(e_{3} \leftarrow e_{1}, e_{2}) = 2 $$
+
 ## Iterated Computation
 
 Let us consider a function, $C$, such that
