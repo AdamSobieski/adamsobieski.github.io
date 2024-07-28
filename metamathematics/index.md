@@ -148,7 +148,7 @@ $$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
 
 [Graph neural network](https://en.wikipedia.org/wiki/Graph_neural_network), [Hypergraph](https://en.wikipedia.org/wiki/Hypergraph)
 
-## Attention
+## Biologically-inspired Iterated Computation
 
 What if artificial-intelligence systems performing or observing the iterated computation of sets of rules upon sets of expressions could focus computation, instead of on entire sets of rules and entire sets of expressions, on contextually relevant subsets of rules and on contextually relevant subsets of expressions?
 
@@ -156,7 +156,7 @@ Let us consider a task of reconstructing portions of graphs of or sets of expres
 
 An analogy can be drawn with the [regulation of gene expression](https://en.wikipedia.org/wiki/Regulation_of_gene_expression) by [gene regulatory networks](https://en.wikipedia.org/wiki/Gene_regulatory_network) in living cells.
 
-The gist is that only a subset of the rules would need to be "expressed", and thus computed, at each iteration.
+That is, only a subset of the rules would need to be "expressed", and thus computed, at each iteration.
 
 $$ x_{n+1} = r_{n}^{+\prime}(x_{n}) \setminus r_{n}^{-\prime}(x_{n}) $$
 
