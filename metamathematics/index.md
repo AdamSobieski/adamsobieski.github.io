@@ -64,9 +64,9 @@ For each time that $e_{1}$ matches an expression in $X_{i}$, output expressions 
 
 Towards analyzing the the computational complexities of rule applications, we can consider the ranks of their antecedents and consequents. Let the rank of a rule's antecedent be the number of comma-delimited expressions in it involving set $X$.
 
-$$ rank_{X}(e_{2} \leftarrow e_{1}) = 1$$
+$$ rank_{X_{i}}(e_{2} \leftarrow e_{1}) = 1$$
 
-$$ rank_{X}(e_{3} \leftarrow e_{1}, e_{2}) = 2 $$
+$$ rank_{X_{i}}(e_{3} \leftarrow e_{1}, e_{2}) = 2 $$
 
 So the rank of rules' antecedents can be obtained for rules involving multiple sets:
 
