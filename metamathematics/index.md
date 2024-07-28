@@ -138,7 +138,7 @@ $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \setminus R_{
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
 
-$$ \left\lvert X_{n+1} \right\rvert = \left\lvert \bigcup_{\rho_{ij}^{+} \in R_{i}^{+}} \rho_{ij}^{+}(x) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
+$$ \left\lvert X_{n+1} \right\rvert = \left\lvert \bigcup_{\rho_{ij}^{+} \in R_{i}^{+}} \rho_{ij}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
 
 ## Abstract Rewriting Systems
 
