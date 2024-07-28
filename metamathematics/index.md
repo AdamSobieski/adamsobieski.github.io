@@ -54,7 +54,7 @@ Certain additive [rules of inference](https://en.wikipedia.org/wiki/Rule_of_infe
 
 $$ e_{1}, e_{2}, e_{1} \wedge e_{2} \leftarrow e_{1}, e_{2} $$
 
-would result in a combinatorial amount of expressions being added to sets $X_{i}$ per iteration.
+would result in a combinatorial amount of expressions being added per iteration.
 
 ## Iterated Computation
 
