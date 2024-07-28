@@ -118,9 +118,9 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
 With cardinalities:
 
-$$ \lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \rvert = \lvert X_{n+1} \rvert - \lvert X_{n+1} \cap X_{n} \rvert $$
+$$ \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \right\rvert = \lvert X_{n+1} \rvert - \lvert X_{n+1} \cap X_{n} \rvert $$
 
-$$ \lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \rvert = \lvert X_{n} \rvert - \lvert X_{n+1} \cap X_{n} \rvert $$
+$$ \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert = \lvert X_{n} \rvert - \lvert X_{n+1} \cap X_{n} \rvert $$
 
 From which we can obtain:
 
