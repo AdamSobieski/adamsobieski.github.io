@@ -62,15 +62,23 @@ $$ \left\lvert e_{2} \in X_{i+1} \leftarrow e_{1} \in X_{i} \right\rvert $$
 
 For each time that $e_{1}$ matches an expression in $X_{i}$, output expressions are produced, and the number of distinct expressions $e_{2}$ is the cardinality of the rule application.
 
-Towards analyzing the the computational complexities of rule applications, we can consider the ranks of their antecedents and consequents. Let the rank of a rule's antecedent be the number of comma-delimited expressions in it.
+Towards analyzing the the computational complexities of rule applications, we can consider the ranks of their antecedents and consequents. Let the rank of a rule's antecedent be the number of comma-delimited expressions in it involving set $X$.
 
-$$ rank_a(e_{2} \leftarrow e_{1}) = 1$$
+$$ rank_{X}(e_{2} \leftarrow e_{1}) = 1$$
 
-$$ rank_a(e_{3} \leftarrow e_{1}, e_{2}) = 2 $$
+$$ rank_{X}(e_{3} \leftarrow e_{1}, e_{2}) = 2 $$
 
-The number of comparisons or matches which need to be explored, computationally, by the application of a rule, $\rho$, on a set of expressions, $X$, is the cardinality of the set $X$ raised to the power $rank_{a}(\rho)$:
+So the rank of rules' antecedents can be obtained for rules involving multiple sets:
 
-$$ \left\lvert X \right\rvert^{rank_{a}(\rho)} $$
+$$ rank_{X_{i}}(\rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1} \in  R_{i}^{+}) = 1 $$
+
+$$ rank_{R_{i}^{+}}(\rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1} \in  R_{i}^{+}) = 1 $$
+
+The number of comparisons or matches which need to be explored, computationally, by the application of a rule, $\rho$, is the product of the cardinality each involved set raised to the power of the rank of the rule's antecedent with respect to that set.
+
+$$ f(e_{3} \in X_{i+1} \leftarrow e_{1} \in X_{i}, e_{2} \in X_{i}) = \left\lvert X_{i} \right\rvert^{2} = $$
+
+$$ f(\rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1} \in  R_{i}^{+}) = \left\lvert X_{i} \right\rvert \left\lvert R_{i}^{+} \right\rvert $$
 
 ## Iterated Computation
 
