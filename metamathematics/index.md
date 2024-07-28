@@ -78,13 +78,13 @@ $$ r_{i}^{-}(x) = \bigcup_{\rho_{ij}^{-} \in r_{i}^{-}} \rho_{ij}^{-}(x) $$
 
 Similarly with the set of rules $m_{i}^{++}$ and the individual rules, $\mu_{ij}^{++}$, contained in that set.
 
-$$ m_{i}^{++}(x, r^{+}, r^{-}) = \bigcup_{\mu_{ij}^{++} \in m_{i}^{++}} \mu_{ij}^{++}(x, r^{+}, r^{-}) $$
+$$ m_{i}^{++}(x, y, z) = \bigcup_{\mu_{ij}^{++} \in m_{i}^{++}} \mu_{ij}^{++}(x, y, z) $$
 
-$$ m_{i}^{+-}(x, r^{+}, r^{-}) = \bigcup_{\mu_{ij}^{+-} \in m_{i}^{+-}} \mu_{ij}^{+-}(x, r^{+}, r^{-}) $$
+$$ m_{i}^{+-}(x, y, z) = \bigcup_{\mu_{ij}^{+-} \in m_{i}^{+-}} \mu_{ij}^{+-}(x, y, z) $$
 
-$$ m_{i}^{-+}(x, r^{+}, r^{-}) = \bigcup_{\mu_{ij}^{-+} \in m_{i}^{-+}} \mu_{ij}^{-+}(x, r^{+}, r^{-}) $$
+$$ m_{i}^{-+}(x, y, z) = \bigcup_{\mu_{ij}^{-+} \in m_{i}^{-+}} \mu_{ij}^{-+}(x, y, z) $$
 
-$$ m_{i}^{--}(x, r^{+}, r^{-}) = \bigcup_{\mu_{ij}^{--} \in m_{i}^{--}} \mu_{ij}^{--}(x, r^{+}, r^{-}) $$
+$$ m_{i}^{--}(x, y, z) = \bigcup_{\mu_{ij}^{--} \in m_{i}^{--}} \mu_{ij}^{--}(x, y, z) $$
 
 Let the following equations describe $C$:
 
