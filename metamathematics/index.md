@@ -150,7 +150,19 @@ $$ \Delta_{x_{n+1} \leftarrow x_{n}}^{-} = x_{n} \setminus x_{n+1} $$
 
 ## Attention
 
-[Attention](https://en.wikipedia.org/wiki/Attention_(machine_learning))
+What if artificial-intelligence systems performing or observing the iterated computation of sets of rules upon sets of expressions could focus computation, instead of on entire sets of rules and entire sets of expressions, on contextually relevant subsets of rules and on contextually relevant subsets of expressions?
+
+Let us consider a task of reconstructing portions of graphs of or sets of expressions and rules after perturbative events. One can observe [differentiable cellular automata](https://distill.pub/2020/growing-ca/) for an example of a self-organizing system capable of self-repair.
+
+An analogy can be drawn with the [regulation of gene expression](https://en.wikipedia.org/wiki/Regulation_of_gene_expression) by [gene regulatory networks](https://en.wikipedia.org/wiki/Gene_regulatory_network) in living cells.
+
+The gist is that only a subset of the rules would need to be "expressed", and thus computed, at each iteration.
+
+$$ x_{n+1} = r_{n}^{+}'(x_{n}) \setminus r_{n}^{-}'(x_{n}) $$
+
+$$ r_{n+1}^{+} = m_{0}^{++}'(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{+-}'(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+
+$$ r_{n+1}^{-} = m_{0}^{-+}'(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{--}'(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
 
 ## Mathematical Truth
 
