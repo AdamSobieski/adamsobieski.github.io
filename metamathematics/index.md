@@ -138,7 +138,9 @@ $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \setminus R_{
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
 
-$$ \left\lvert X_{n+1} \right\rvert = \left\lvert \bigcup_{\rho_{ni}^{+} \in R_{n}^{+}} \rho_{ni}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
+$$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{-}(X_{n}) \right\rvert + \left\lvert R_{n}^{+}(X_{n}) \cup R_{n}^{-}(X_{n}) \right\rvert$$
+
+$$ \left\lvert X_{n+1} \right\rvert = \left\lvert \bigcup_{\rho_{ni}^{+} \in R_{n}^{+}} \rho_{ni}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{-}(X_{n}) \right\rvert + \left\lvert R_{n}^{+}(X_{n}) \cup R_{n}^{-}(X_{n}) \right\rvert$$
 
 Next, using the [inclusion-exclusion principle](https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle):
 
