@@ -132,18 +132,6 @@ From which we can obtain:
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert X_{n} \right\rvert + \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \right\rvert - \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert $$
 
-Let us consider that:
-
-$$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \setminus R_{n}^{-}(X_{n}) \right\rvert $$
-
-$$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
-
-$$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \cup R_{n}^{-}(X_{n}) \right\rvert - \left\lvert R_{n}^{-}(X_{n}) \right\rvert$$
-
-Next, substituting in that $R_{n}^{+}(X_{n})$ and $R_{n}^{-}(X_{n})$ are each unions of sets of expressions produced by rule applications and using the [inclusion-exclusion principle](https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle):
-
-$$ \dots $$
-
 ## Abstract Rewriting Systems
 
 [Rewriting](https://en.wikipedia.org/wiki/Rewriting), [Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system)
