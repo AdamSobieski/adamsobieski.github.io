@@ -156,13 +156,7 @@ Let us consider a task of reconstructing portions of graphs of or sets of expres
 
 An analogy can be drawn with the [regulation of gene expression](https://en.wikipedia.org/wiki/Regulation_of_gene_expression) by [gene regulatory networks](https://en.wikipedia.org/wiki/Gene_regulatory_network) in living cells.
 
-That is, only a subset of the rules would need to be "expressed", and thus computed, at each iteration.
-
-$$ x_{n+1} = r_{n}^{+\prime}(x_{n}) \setminus r_{n}^{-\prime}(x_{n}) $$
-
-$$ r_{n+1}^{+} = m_{0}^{++\prime}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{+-\prime}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
-
-$$ r_{n+1}^{-} = m_{0}^{-+\prime}(x_{n}, r_{n}^{+}, r_{n}^{-}) \setminus m_{0}^{--\prime}(x_{n}, r_{n}^{+}, r_{n}^{-}) $$
+That is, only a subset of the rules and the expressions would need to be "expressed", and thus computed, at each iteration.
 
 ## Mathematical Truth
 
