@@ -130,6 +130,10 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
 Chen, Zhe, Yuehan Wang, Bin Zhao, Jing Cheng, Xin Zhao, and Zongtao Duan. "Knowledge graph completion: A review." _IEEE Access_ 8 (2020): 192435-192456. [[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9220143)]
 
+## Tree Automata
+
+[Tree automaton](https://en.wikipedia.org/wiki/Tree_automaton)
+
 ## Rule Induction
 
 [Rule induction](https://en.wikipedia.org/wiki/Rule_induction)
@@ -141,10 +145,6 @@ Chen, Zhe, Yuehan Wang, Bin Zhao, Jing Cheng, Xin Zhao, and Zongtao Duan. "Knowl
 ## Ontology Induction
 
 [Ontology learning](https://en.wikipedia.org/wiki/Ontology_learning)
-
-## Tree Automata
-
-[Tree automaton](https://en.wikipedia.org/wiki/Tree_automaton)
 
 ## Reverse Mathematics
 
