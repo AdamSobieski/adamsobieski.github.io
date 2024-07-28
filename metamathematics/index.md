@@ -124,7 +124,7 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
 [L-system](https://en.wikipedia.org/wiki/L-system)
 
-## Automatic Knowledge Graph Construction
+## Knowledge Graph Completion
 
 [https://arxiv.org/abs/2302.05019](https://arxiv.org/abs/2302.05019)
 
