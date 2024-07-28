@@ -124,6 +124,10 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 
 [L-system](https://en.wikipedia.org/wiki/L-system)
 
+## Automatic Knowledge Graph Construction
+
+[https://arxiv.org/abs/2302.05019](https://arxiv.org/abs/2302.05019)
+
 ## Rule Induction
 
 [Rule induction](https://en.wikipedia.org/wiki/Rule_induction)
@@ -131,6 +135,10 @@ $$ \Delta_{X_{n+1} \leftarrow X_{n}}^{-} = X_{n} \setminus X_{n+1} $$
 ## Grammar Induction
 
 [Grammar induction](https://en.wikipedia.org/wiki/Grammar_induction), [Grammar-based code](https://en.wikipedia.org/wiki/Grammar-based_code)
+
+## Ontology Induction
+
+[Ontology learning](https://en.wikipedia.org/wiki/Ontology_learning)
 
 ## Tree Automata
 
