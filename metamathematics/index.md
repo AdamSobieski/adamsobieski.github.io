@@ -66,7 +66,7 @@ where $X_{i}$ are sets of mathematical expressions, $R_{i}^{+}$ are sets of rule
 
 Per the notation of [iterated functions](https://en.wikipedia.org/wiki/Iterated_function), we can write:
 
-$$ \left< X_{N}, R_{N}^{+}, R_{N}^{-}, M_{N}^{++}, M_{N}^{+-}, M_{N}^{-+}, M_{N}^{--} \right> = C^{N}\left( \left< X_{0}, R_{0}^{+}, R_{0}^{-}, M_{0}^{++}, M_{0}^{+-}, M_{0}^{-+}, M_{0}^{--} \right> \right) $$
+$$ \left< X_{n}, R_{n}^{+}, R_{n}^{-}, M_{n}^{++}, M_{n}^{+-}, M_{n}^{-+}, M_{n}^{--} \right> = C^{n}\left( \left< X_{0}, R_{0}^{+}, R_{0}^{-}, M_{0}^{++}, M_{0}^{+-}, M_{0}^{-+}, M_{0}^{--} \right> \right) $$
 
 Let us use a syntax convention that $R_{n}^{+}( X_{n})$ means those expressions produced by applying the rules in set $R_{n}^{+}$ to a set of mathematical expressions $X_{n}$, and a syntax convention that $M_{n}^{++}(X_{n}, R_{n}^{+}, R_{n}^{-})$ means those rules produced by applying the rules in set $M_{n}^{++}$ to a set of mathematical expressions $X_{n}$ and sets of rules $R_{n}^{+}$ and $R_{n}^{-}$.
 
