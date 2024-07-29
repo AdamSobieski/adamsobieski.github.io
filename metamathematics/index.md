@@ -142,10 +142,6 @@ $$ \left\lvert X_{n+1} \right\rvert = \left\lvert X_{n} \right\rvert + \left\lve
 
 Chen, Zhe, Yuehan Wang, Bin Zhao, Jing Cheng, Xin Zhao, and Zongtao Duan. "Knowledge graph completion: A review." _IEEE Access_ 8 (2020): 192435-192456. [[PDF](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9220143)]
 
-## Tree Automata
-
-[Tree automaton](https://en.wikipedia.org/wiki/Tree_automaton)
-
 ## Rule Induction
 
 [Rule induction](https://en.wikipedia.org/wiki/Rule_induction)
