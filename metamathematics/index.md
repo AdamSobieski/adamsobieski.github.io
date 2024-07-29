@@ -41,7 +41,7 @@ INSERT
   {
     ?x1 ex:p ?x2.
     ?x2 ex:b ?x3.
-    ?x1 ex:u ?x3
+    ?x1 ex:u ?x3.
   }
 }
 WHERE
