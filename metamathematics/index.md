@@ -2,6 +2,8 @@
 title: Metamathematics
 ---
 
+## Introduction
+
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
 ## Rules
@@ -180,7 +182,7 @@ That is, only a subset of the rules and the expressions would need to be "expres
 
 ## Multi-agent Systems
 
-Similarly, [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could create, select, and orchestrate specialized [agents](https://en.wikipedia.org/wiki/Intelligent_agent) which operate upon graphs of or sets of expressions and rules.
+Similarly, [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could create, select, and orchestrate specialized [agents](https://en.wikipedia.org/wiki/Intelligent_agent) which operate upon sets, tables, or graphs of expressions and rules.
 
 ## Truth and Paradox
 
