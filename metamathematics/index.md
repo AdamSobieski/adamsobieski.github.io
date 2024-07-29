@@ -8,15 +8,49 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-There is an interesting generalization possible involving rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language) and [query languages](https://en.wikipedia.org/wiki/Query_language).
+There is an interesting generalization possible involving rules and the `INSERT` operations of many [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language) and [query languages](https://en.wikipedia.org/wiki/Query_language).
 
 Here is an example rule: any individual ($x_{1}$) whose parent ($x_{2}$) has a brother ($x_{3}$) has an uncle ($x_{3}$).
 
+$$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow u(x_{1}, x_{3}) $$
+
+Here is a SQL example resembling the logic rule:
+```sql
+INSERT INTO Table (s, p, o)
+SELECT DISTINCT s1.s, 'u', s2.o
+FROM Table s1, Table s2
+WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
+```
+
+Here is a SPARQL example resembling the logic rule:
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex:  <http://example.com/>
+
+INSERT 
+{
+  GRAPH <http://example.com/graph>
+  {
+    ?x1 ex:u ?x3.
+  }
+}
+WHERE
+{
+  GRAPH <http://example.com/graph>
+  {
+    ?x1 ex:p ?x2.
+    ?x2 ex:b ?x3.
+  }
+}
+```
+
+Here is an that logic rule rephrased as a [rewrite](https://en.wikipedia.org/wiki/Rewriting) rule:
+
 $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3}), u(x_{1}, x_{3}) $$
 
-As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules which intend to preserve their antecedents (or bodies) can copy these into their consequents (or heads). Broadly speaking, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can optionally accompany any produced content into resultant sets, tables, or graphs.
+As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules which intend to preserve their antecedents (or bodies) should copy these into their consequents (or heads). Broadly speaking, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can optionally accompany any generated content intended to be placed in resultant sets, tables, or graphs.
 
-Here is a SQL example resembling the above example rule:
+Here is a SQL example resembling the rewrite rule:
 ```sql
 INSERT INTO NextTable (s, p, o)
 SELECT DISTINCT s1.s, 'u', s2.o
@@ -32,7 +66,7 @@ FROM PreviousTable s1, PreviousTable s2
 WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
 ```
 
-Here is a SPARQL example resembling the above example rule:
+Here is a SPARQL example resembling the rewrite rule:
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ex:  <http://example.com/>
@@ -179,6 +213,10 @@ That is, only a subset of the rules and the expressions would need to be "expres
 ## Multi-agent Systems
 
 Similarly, [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could create, select, and orchestrate specialized [agents](https://en.wikipedia.org/wiki/Intelligent_agent) which operate upon sets, tables, or graphs of expressions and rules.
+
+## Systems of Systems
+
+[System of systems](https://en.wikipedia.org/wiki/System_of_systems)
 
 ## Truth and Paradox
 
