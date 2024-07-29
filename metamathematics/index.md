@@ -14,6 +14,17 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 There is an interesting generalization possible from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
 
+Here is an example of a rule:
+
+$$ hasParent(?x1,?x2), hasBrother(?x2,?x3) \rightarrow hasParent(?x1,?x2), hasBrother(?x2,?x3), hasUncle(?x1,?x3) $$
+
+$$
+\begin{align*} 
+2x - 5y &=  8 \\ 
+3x + 9y &=  -12
+\end{align*}
+$$
+
 Here is a SQL example:
 ```sql
 INSERT INTO NextTable
