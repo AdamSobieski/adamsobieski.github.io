@@ -28,7 +28,7 @@ $$ \dots $$
 
 We could then define a set of rules
 
-$$ R(I, O) = \left{\rho_{1}(I, O), \rho_{2}(I, O), \rho_{3}(I, O) \right}
+$$ R(I, O) = \left{\rho_{1}(I, O), \rho_{2}(I, O), \rho_{3}(I, O) \right} $$
 
 Rules can involve multiple input and/or output sets:
 
