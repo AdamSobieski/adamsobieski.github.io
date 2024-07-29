@@ -14,6 +14,8 @@ $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3})
 
 As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules which intend to preserve their antecedents or their bodies can copy their antecedents into their consequents or their bodies into their heads.
 
+That is, broadly speaking, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can optionally accompany any produced content into new sets, tables, or graphs.
+
 Here is a similar SQL example:
 ```sql
 INSERT INTO NextTable (s, p, o)
@@ -53,8 +55,6 @@ WHERE
   }
 }
 ```
-
-Optionally, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can, alongside any newly produced content, be copied from existing sets, tables, or graphs into new ones.
 
 Discussed, below, are systems which process multiple rules in parallel and systems which have dynamic sets of rules.
 
