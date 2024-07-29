@@ -8,13 +8,11 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 There is an interesting generalization possible from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
 
-Here is an example of a rule, a person whose parent has a brother has an uncle.
+Here is an example rule: a person ($x_{1}$) whose parent ($x_{2}$) has a brother ($x_{3}$) has an uncle ($x_{3}$).
 
 $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3}), u(x_{1}, x_{3}) $$
 
-As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules which intend to preserve their antecedents or their bodies can copy their antecedents into their consequents or their bodies into their heads.
-
-That is, broadly speaking, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can optionally accompany any produced content into new sets, tables, or graphs.
+As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules which intend to preserve their antecedents (or bodies) can copy these into their consequents (or heads). Broadly speaking, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can optionally accompany any produced content into resultant sets, tables, or graphs.
 
 Here is a SQL example resembling the above example rule:
 ```sql
