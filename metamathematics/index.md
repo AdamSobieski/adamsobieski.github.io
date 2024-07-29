@@ -37,14 +37,20 @@ PREFIX ex:  <http://example.com>
 
 INSERT 
 {
-  ?x1 ex:p ?x2.
-  ?x2 ex:b ?x3.
-  ?x1 ex:u ?x3
+  GRAPH <http://example.com/nextgraph>
+  {
+    ?x1 ex:p ?x2.
+    ?x2 ex:b ?x3.
+    ?x1 ex:u ?x3
+  }
 }
 WHERE
 {
-  ?x1 ex:p ?x2.
-  ?x2 ex:b ?x3.
+  GRAPH <http://example.com/previousgraph>
+  {
+    ?x1 ex:p ?x2.
+    ?x2 ex:b ?x3.
+  }
 }
 ```
 
