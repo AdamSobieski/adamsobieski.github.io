@@ -8,7 +8,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 There is an interesting generalization possible from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
 
-Here is an example of a rule:
+Here is an example of a rule, a person whose parent has a brother has an uncle.
 
 $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3}), u(x_{1}, x_{3}) $$
 
@@ -16,7 +16,7 @@ As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [
 
 That is, broadly speaking, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can optionally accompany any produced content into new sets, tables, or graphs.
 
-Here is a similar SQL example:
+Here is a SQL example resembling the above example rule:
 ```sql
 INSERT INTO NextTable (s, p, o)
 SELECT DISTINCT s1.s, 'u', s2.o
@@ -32,7 +32,7 @@ FROM PreviousTable s1, PreviousTable s2
 WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
 ```
 
-Here is a similar SPARQL example:
+Here is a SPARQL example resembling the above example rule:
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ex:  <http://example.com/>
