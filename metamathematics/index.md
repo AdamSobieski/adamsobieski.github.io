@@ -10,16 +10,16 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-[Data manipulation language](https://en.wikipedia.org/wiki/Data_manipulation_language), [Inference engine](https://en.wikipedia.org/wiki/Inference_engine), [Insert](https://en.wikipedia.org/wiki/Insert_(SQL)), [Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Query language](https://en.wikipedia.org/wiki/Query_language), [Query optimization](https://en.wikipedia.org/wiki/Query_optimization), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system), [SPARQL](https://en.wikipedia.org/wiki/SPARQL), [SPARQL Update](https://www.w3.org/TR/sparql11-update/)
+[Inference engine](https://en.wikipedia.org/wiki/Inference_engine), [Query language](https://en.wikipedia.org/wiki/Query_language), [Query optimization](https://en.wikipedia.org/wiki/Query_optimization), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system)
 
-There is an interesting generalization from both rules and the `INSERT` operations from a number of data manipulation languages.
+There is an interesting generalization from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
 
 Here is a SQL example:
 ```sql
-INSERT INTO OldCustomers
+INSERT INTO NewCustomers
 SELECT *
 FROM Customers
-WHERE country = 'USA';
+WHERE balance > 10000;
 ```
 
 Here is a SPARQL example:
@@ -40,6 +40,8 @@ WHERE
       OPTIONAL { ?person  foaf:mbox  ?email }
     } }
 ```
+
+Content which [matches a pattern](https://en.wikipedia.org/wiki/Pattern_matching) is copied from an old set of expressions, table of rows, or graph into a different and new set of expressions, table of rows, or graph.
 
 ## Iterated Computation
 
