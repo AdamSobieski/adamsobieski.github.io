@@ -10,7 +10,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-[Data manipulation language](https://en.wikipedia.org/wiki/Data_manipulation_language), [Inference engine](https://en.wikipedia.org/wiki/Inference_engine), [Insert](https://en.wikipedia.org/wiki/Insert_(SQL)), [Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Query language](https://en.wikipedia.org/wiki/Query_language), [Query optimization](https://en.wikipedia.org/wiki/Query_optimization), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system), [SPARQL](https://en.wikipedia.org/wiki/SPARQL)
+[Data manipulation language](https://en.wikipedia.org/wiki/Data_manipulation_language), [Inference engine](https://en.wikipedia.org/wiki/Inference_engine), [Insert](https://en.wikipedia.org/wiki/Insert_(SQL)), [Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Query language](https://en.wikipedia.org/wiki/Query_language), [Query optimization](https://en.wikipedia.org/wiki/Query_optimization), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system), [SPARQL](https://en.wikipedia.org/wiki/SPARQL), [SPARQL Update](https://www.w3.org/TR/sparql11-update/)
 
 ## Iterated Computation
 
