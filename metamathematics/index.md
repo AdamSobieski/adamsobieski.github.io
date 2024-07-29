@@ -16,14 +16,7 @@ There is an interesting generalization possible from rules and the `INSERT` oper
 
 Here is an example of a rule:
 
-$$ hasParent(?x1,?x2), hasBrother(?x2,?x3) \rightarrow hasParent(?x1,?x2), hasBrother(?x2,?x3), hasUncle(?x1,?x3) $$
-
-$$
-\begin{align*} 
-2x - 5y &=  8 \\ 
-3x + 9y &=  -12
-\end{align*}
-$$
+$$ hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}) \rightarrow hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}), hasUncle(x_{1}, x_{3}) $$
 
 Here is a SQL example:
 ```sql
