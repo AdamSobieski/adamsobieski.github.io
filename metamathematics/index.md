@@ -54,15 +54,15 @@ Here is a SQL example resembling the rewrite rule:
 ```sql
 INSERT INTO NextTable (s, p, o)
 SELECT DISTINCT s1.s, 'u', s2.o
-FROM PreviousTable s1, PreviousTable s2
+FROM CurrentTable s1, CurrentTable s2
 WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s
 UNION
 SELECT DISTINCT s1.s, s1.p, s1.o
-FROM PreviousTable s1, PreviousTable s2
+FROM CurrentTable s1, CurrentTable s2
 WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s
 UNION
 SELECT DISTINCT s2.s, s2.p, s2.o
-FROM PreviousTable s1, PreviousTable s2
+FROM CurrentTable s1, CurrentTable s2
 WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
 ```
 
@@ -82,7 +82,7 @@ INSERT
 }
 WHERE
 {
-  GRAPH <http://example.com/previous>
+  GRAPH <http://example.com/current>
   {
     ?x1 ex:p ?x2.
     ?x2 ex:b ?x3.
