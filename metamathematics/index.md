@@ -14,17 +14,17 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-Rules can be expressed using a notation:
+Rules can be expressed using the following notations:
 
 $$ \rho_{1}(I, O) \coloneq e_{2} \in O \leftarrow e_{1} \in I $$
 
-$$ e_{2} \in X_{i+1} \leftarrow e_{1} \in X_{i} $$
+$$ \rho_{2}(I, O) \coloneq e_{3} \in O \leftarrow e_{1} \in I, e_{2} \in I $$
 
-$$ e_{3} \in X_{i+1} \leftarrow e_{1} \in X_{i}, e_{2} \in X_{i} $$
+$$ \rho_{3}(I, O) \coloneq e_{6} \in O, e_{7} \in O \leftarrow e_{4} \in I, e_{5} \in I $$
 
-$$ e_{6} \in X_{i+1}, e_{7} \in X_{i+1} \leftarrow e_{4} \in X_{i}, e_{5} \in X_{i} $$
+...
 
-This notation is useful for cases where rules involve multiple input and/or output sets:
+This notation can be useful for cases where rules involve multiple input and/or output sets:
 
 $$ \rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1} \in  R_{i}^{+} $$
 
