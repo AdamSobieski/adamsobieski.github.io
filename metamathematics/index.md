@@ -4,13 +4,7 @@ title: Metamathematics
 
 This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Metamathematics) ideas.
 
-## Expressions
-
-[Expression](https://en.wikipedia.org/wiki/Expression_(mathematics)), [Formula](https://en.wikipedia.org/wiki/Formula), [Well-defined expression](https://en.wikipedia.org/wiki/Well-defined_expression), [Well-formed formula](https://en.wikipedia.org/wiki/Well-formed_formula)
-
 ## Rules
-
-[Inference engine](https://en.wikipedia.org/wiki/Inference_engine), [Query language](https://en.wikipedia.org/wiki/Query_language), [Query optimization](https://en.wikipedia.org/wiki/Query_optimization), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system)
 
 There is an interesting generalization possible from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
 
@@ -18,39 +12,7 @@ Here is an example of a kind of production rule:
 
 $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3}), u(x_{1}, x_{3}) $$
 
-Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language) Concrete XML Syntax:
-
-```xml
-<ruleml:imp> 
-  <ruleml:_rlab ruleml:href="#example1"/>
-  <ruleml:_body> 
-    <swrlx:individualPropertyAtom  swrlx:property="p"> 
-      <ruleml:var>x1</ruleml:var>
-      <ruleml:var>x2</ruleml:var>
-    </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="b"> 
-      <ruleml:var>x2</ruleml:var>
-      <ruleml:var>x3</ruleml:var>
-    </swrlx:individualPropertyAtom> 
-  </ruleml:_body> 
-  <ruleml:_head> 
-    <swrlx:individualPropertyAtom  swrlx:property="p"> 
-      <ruleml:var>x1</ruleml:var>
-      <ruleml:var>x2</ruleml:var>
-    </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="b"> 
-      <ruleml:var>x2</ruleml:var>
-      <ruleml:var>x3</ruleml:var>
-    </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="u"> 
-      <ruleml:var>x1</ruleml:var>
-      <ruleml:var>x3</ruleml:var>
-    </swrlx:individualPropertyAtom> 
-  </ruleml:_head> 
-</ruleml:imp>
-```
-
-As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules can copy their antecedents into their consequents, or their bodies into their heads.
+As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules which intend to preserve their antecedents or their bodies can copy their antecedents into their consequents or their bodies into their heads.
 
 Here is a SQL example:
 ```sql
@@ -70,16 +32,20 @@ INSERT
     {
       ?person  foaf:name  ?name .
       ?person  foaf:mbox  ?email
-    } }
+    }
+  }
 WHERE
   { GRAPH  <http://example.com/previousgraph>
     {
       ?person  foaf:name  ?name .
       OPTIONAL { ?person  foaf:mbox  ?email }
-    } }
+    }
+  }
 ```
 
-Contents, e.g., objects, expressions, rows, or subgraphs, which match a specified pattern are copied from an old set of objects, expressions, table of rows, or graph into a different and new set of objects, expressions, table of rows, or graph.
+Contents, e.g., objects, expressions, rows, or subgraphs, which match a specified pattern are copied from an old set of objects, set of expressions, table of rows, or graph into (alongside new contents) a different and new set of objects, expressions, table of rows, or graph.
+
+Discussed below are systems with multiple, parallel rules for copying and creating new contents between seqeuences of sets of objects, sets of expressions, tables of rows, or graphs. Discussed below are such systems where the rules can be dynamic.
 
 ## Iterated Computation
 
