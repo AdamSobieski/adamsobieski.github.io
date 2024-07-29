@@ -16,10 +16,18 @@ As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [
 
 Here is a SQL example:
 ```sql
-INSERT INTO NextTable
-SELECT *
-FROM PreviousTable
-WHERE x > 10000;
+INSERT INTO NextTable (subject, predicate, object)
+SELECT DISTINCT s1.subject, 'u', s2.object
+FROM PreviousTable s1, PreviousTable s2
+WHERE s1.predicate = 'p' AND s2.predicate = 'b' AND s1.object = s2.subject
+UNION
+SELECT DISTINCT s1.subject, s1.predicate, s1.object
+FROM PreviousTable s1, PreviousTable s2
+WHERE s1.predicate = 'p' AND s2.predicate = 'b' AND s1.object = s2.subject
+UNION
+SELECT DISTINCT s2.subject, s2.predicate, s2.object
+FROM PreviousTable s1, PreviousTable s2
+WHERE s1.predicate = 'p' AND s2.predicate = 'b' AND s1.object = s2.subject;
 ```
 
 Here is a SPARQL example:
