@@ -18,7 +18,7 @@ Here is an example of a rule:
 
 $$ parent(x_{1}, x_{2}), brother(x_{2}, x_{3}) \rightarrow parent(x_{1}, x_{2}), brother(x_{2}, x_{3}), uncle(x_{1}, x_{3}) $$
 
-Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language) Concrete XML syntax:
+Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language) Concrete XML Syntax:
 
 ```xml
 <ruleml:imp> 
