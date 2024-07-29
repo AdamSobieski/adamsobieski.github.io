@@ -16,9 +16,9 @@ $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow u(x_{1}, x_{3}) $$
 
 Here is a SQL example resembling the logic rule:
 ```sql
-INSERT INTO Table (s, p, o)
+INSERT INTO CurrentTable (s, p, o)
 SELECT DISTINCT s1.s, 'u', s2.o
-FROM Table s1, Table s2
+FROM CurrentTable s1, CurrentTable s2
 WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
 ```
 
@@ -29,14 +29,14 @@ PREFIX ex:  <http://example.com/>
 
 INSERT 
 {
-  GRAPH <http://example.com/graph>
+  GRAPH <http://example.com/current>
   {
     ?x1 ex:u ?x3.
   }
 }
 WHERE
 {
-  GRAPH <http://example.com/graph>
+  GRAPH <http://example.com/current>
   {
     ?x1 ex:p ?x2.
     ?x2 ex:b ?x3.
