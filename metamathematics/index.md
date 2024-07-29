@@ -16,9 +16,9 @@ There is an interesting generalization possible from rules and the `INSERT` oper
 
 Here is a SQL example:
 ```sql
-INSERT INTO Next
+INSERT INTO NextTable
 SELECT *
-FROM Previous
+FROM PreviousTable
 WHERE x > 10000;
 ```
 
@@ -28,13 +28,13 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 INSERT 
-  { GRAPH <http://example.com/next>
+  { GRAPH <http://example.com/nextgraph>
     {
       ?person  foaf:name  ?name .
       ?person  foaf:mbox  ?email
     } }
 WHERE
-  { GRAPH  <http://example.com/previous>
+  { GRAPH  <http://example.com/previousgraph>
     {
       ?person  foaf:name  ?name .
       OPTIONAL { ?person  foaf:mbox  ?email }
