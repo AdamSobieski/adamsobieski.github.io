@@ -16,7 +16,7 @@ There is an interesting generalization possible from rules and the `INSERT` oper
 
 Here is an example of a kind of production rule:
 
-$$ hasP(x_{1}, x_{2}), hasB(x_{2}, x_{3}) \rightarrow hasP(x_{1}, x_{2}), hasB(x_{2}, x_{3}), hasU(x_{1}, x_{3}) $$
+$$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3}), u(x_{1}, x_{3}) $$
 
 Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language) Concrete XML Syntax:
 
@@ -24,31 +24,33 @@ Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wik
 <ruleml:imp> 
   <ruleml:_rlab ruleml:href="#example1"/>
   <ruleml:_body> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasP"> 
+    <swrlx:individualPropertyAtom  swrlx:property="p"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x2</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasB"> 
+    <swrlx:individualPropertyAtom  swrlx:property="b"> 
       <ruleml:var>x2</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
   </ruleml:_body> 
   <ruleml:_head> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasP"> 
+    <swrlx:individualPropertyAtom  swrlx:property="p"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x2</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasB"> 
+    <swrlx:individualPropertyAtom  swrlx:property="b"> 
       <ruleml:var>x2</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasU"> 
+    <swrlx:individualPropertyAtom  swrlx:property="u"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
   </ruleml:_head> 
 </ruleml:imp>
 ```
+
+As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules can copy their antecedents into their consequents, or their bodies into their heads.
 
 Here is a SQL example:
 ```sql
