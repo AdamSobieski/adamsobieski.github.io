@@ -14,11 +14,9 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 There is an interesting generalization possible from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
 
-Here is an example of a rule:
+Here is an example of a kind of production rule:
 
-```math
-\displaylines{hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}) \\ \rightarrow hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}), hasUncle(x_{1}, x_{3})}
-```
+$$ hasP(x_{1}, x_{2}), hasB(x_{2}, x_{3}) \rightarrow hasP(x_{1}, x_{2}), hasB(x_{2}, x_{3}), hasU(x_{1}, x_{3}) $$
 
 Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language) Concrete XML Syntax:
 
@@ -26,25 +24,25 @@ Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wik
 <ruleml:imp> 
   <ruleml:_rlab ruleml:href="#example1"/>
   <ruleml:_body> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasParent"> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasP"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x2</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasBrother"> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasB"> 
       <ruleml:var>x2</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
   </ruleml:_body> 
   <ruleml:_head> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasParent"> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasP"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x2</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasBrother"> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasB"> 
       <ruleml:var>x2</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasUncle"> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasU"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
