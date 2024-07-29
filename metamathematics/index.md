@@ -140,9 +140,9 @@ Similarly, [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_syste
 
 ## Truth and Paradox
 
-For some systems, the expressions in sets $X$ can be interpreted as being intended to be "true".
-
 [Truth](https://en.wikipedia.org/wiki/Truth), [Paradox](https://en.wikipedia.org/wiki/Paradox), [Paradoxes and Contemporary Logic](https://plato.stanford.edu/entries/paradoxes-contemporary-logic/), [Self-reference and Paradox](https://plato.stanford.edu/entries/self-reference/)
+
+For some systems, the expressions in sets $X$ can be interpreted as being intended to be "true".
 
 ## Bibliography
 
