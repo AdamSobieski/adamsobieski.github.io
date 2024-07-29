@@ -16,6 +16,8 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 Rules can be expressed using a notation:
 
+$$ \rho_{1}(I, O) \coloneq e_{2} \in O \leftarrow e_{1} \in I $$
+
 $$ e_{2} \in X_{i+1} \leftarrow e_{1} \in X_{i} $$
 
 $$ e_{3} \in X_{i+1} \leftarrow e_{1} \in X_{i}, e_{2} \in X_{i} $$
