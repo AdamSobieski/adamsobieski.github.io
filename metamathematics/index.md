@@ -56,7 +56,7 @@ WHERE
 
 Optionally, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can, alongside any newly produced content, be copied from existing sets, tables, or graphs into new ones.
 
-Discussed below are systems with multiple, parallel rules to be processed to copy and create new contents across seqeuences of sets of objects, sets of expressions, tables of rows, or graphs. Discussed below are such systems where these rules can be dynamic.
+Discussed, below, are systems which process multiple rules in parallel and systems which have dynamic sets of rules.
 
 ## Iterated Computation
 
