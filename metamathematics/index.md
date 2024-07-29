@@ -22,7 +22,7 @@ $$ \rho_{2}(I, O) \coloneq e_{3} \in O \leftarrow e_{1} \in I, e_{2} \in I $$
 
 $$ \rho_{3}(I, O) \coloneq e_{6} \in O, e_{7} \in O \leftarrow e_{4} \in I, e_{5} \in I $$
 
-...
+$$ \dots $$
 
 This notation can be useful for cases where rules involve multiple input and/or output sets:
 
