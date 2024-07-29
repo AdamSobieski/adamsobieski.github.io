@@ -14,7 +14,7 @@ $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3})
 
 As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules which intend to preserve their antecedents or their bodies can copy their antecedents into their consequents or their bodies into their heads.
 
-Here is a SQL example:
+Here is a similar SQL example:
 ```sql
 INSERT INTO NextTable (subject, predicate, object)
 SELECT DISTINCT s1.subject, 'u', s2.object
@@ -30,25 +30,22 @@ FROM PreviousTable s1, PreviousTable s2
 WHERE s1.predicate = 'p' AND s2.predicate = 'b' AND s1.object = s2.subject;
 ```
 
-Here is a SPARQL example:
+Here is a similar SPARQL example:
 ```sparql
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex:  <http://example.com>
 
 INSERT 
-  { GRAPH <http://example.com/nextgraph>
-    {
-      ?person  foaf:name  ?name .
-      ?person  foaf:mbox  ?email
-    }
-  }
+{
+  ?x1 ex:p ?x2.
+  ?x2 ex:b ?x3.
+  ?x1 ex:u ?x3
+}
 WHERE
-  { GRAPH  <http://example.com/previousgraph>
-    {
-      ?person  foaf:name  ?name .
-      OPTIONAL { ?person  foaf:mbox  ?email }
-    }
-  }
+{
+  ?x1 ex:p ?x2.
+  ?x2 ex:b ?x3.
+}
 ```
 
 Contents, e.g., objects, expressions, rows, or subgraphs, which match a specified pattern are copied from an old set of objects, set of expressions, table of rows, or graph (alongside new contents) into a different and new set of objects, expressions, table of rows, or graph.
