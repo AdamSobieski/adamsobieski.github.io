@@ -14,7 +14,9 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-Rules can be expressed using the following notations:
+[Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Query language](https://en.wikipedia.org/wiki/Query_language), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra)
+
+There are different kinds of rules. For instance, some rules operate on sets of expressions and others on graphs. Let us consider the following notations for rules:
 
 $$ \rho_{1}(I, O) \coloneq e_{2} \in O \leftarrow e_{1} \in I $$
 
