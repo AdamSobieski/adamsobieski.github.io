@@ -6,7 +6,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-There is an interesting generalization possible from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
+There is an interesting generalization possible involving rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language) and [query languages](https://en.wikipedia.org/wiki/Query_language).
 
 Here is an example rule: a person ($x_{1}$) whose parent ($x_{2}$) has a brother ($x_{3}$) has an uncle ($x_{3}$).
 
