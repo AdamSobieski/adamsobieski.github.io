@@ -41,7 +41,7 @@ WHERE
     } }
 ```
 
-Content which [matches a pattern](https://en.wikipedia.org/wiki/Pattern_matching) is copied from an old set of expressions, table of rows, or graph into a different and new set of expressions, table of rows, or graph.
+Content which matches a pattern is copied from an old set of expressions, table of rows, or graph into a different and new set of expressions, table of rows, or graph.
 
 ## Iterated Computation
 
