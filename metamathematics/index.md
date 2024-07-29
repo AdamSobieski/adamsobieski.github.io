@@ -43,7 +43,7 @@ WHERE
   }
 ```
 
-Contents, e.g., objects, expressions, rows, or subgraphs, which match a specified pattern are copied from an old set of objects, set of expressions, table of rows, or graph into (alongside new contents) a different and new set of objects, expressions, table of rows, or graph.
+Contents, e.g., objects, expressions, rows, or subgraphs, which match a specified pattern are copied from an old set of objects, set of expressions, table of rows, or graph (alongside new contents) into a different and new set of objects, expressions, table of rows, or graph.
 
 Discussed below are systems with multiple, parallel rules to be processed to copy and create new contents across seqeuences of sets of objects, sets of expressions, tables of rows, or graphs. Discussed below are such systems where these rules can be dynamic.
 
