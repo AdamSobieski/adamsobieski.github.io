@@ -14,7 +14,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-[Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Query language](https://en.wikipedia.org/wiki/Query_language), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system), [Selection](https://en.wikipedia.org/wiki/Selection_(relational_algebra)), [SPARQL](https://en.wikipedia.org/wiki/SPARQL)
+[Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Query language](https://en.wikipedia.org/wiki/Query_language), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system), [Select](https://en.wikipedia.org/wiki/Select_(SQL)), [Selection](https://en.wikipedia.org/wiki/Selection_(relational_algebra)), [SPARQL](https://en.wikipedia.org/wiki/SPARQL)
 
 ## Iterated Computation
 
