@@ -16,7 +16,8 @@ There is an interesting generalization possible from rules and the `INSERT` oper
 
 Here is an example of a rule:
 
-$$ parent(x_{2}, x_{1}), brother(x_{3}, x_{2}) \rightarrow parent(x_{2}, x_{1}), brother(x_{3}, x_{2}), uncle(x_{3}, x_{1}) $$
+$$ hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}) \rightarrow \\
+hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}), hasUncle(x_{1}, x_{3}) $$
 
 Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language) Concrete XML Syntax:
 
@@ -24,27 +25,27 @@ Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wik
 <ruleml:imp> 
   <ruleml:_rlab ruleml:href="#example1"/>
   <ruleml:_body> 
-    <swrlx:individualPropertyAtom  swrlx:property="parent"> 
-      <ruleml:var>x2</ruleml:var>
+    <swrlx:individualPropertyAtom  swrlx:property="hasParent"> 
       <ruleml:var>x1</ruleml:var>
-    </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="brother"> 
-      <ruleml:var>x3</ruleml:var>
       <ruleml:var>x2</ruleml:var>
+    </swrlx:individualPropertyAtom> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasBrother"> 
+      <ruleml:var>x2</ruleml:var>
+      <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
   </ruleml:_body> 
   <ruleml:_head> 
-    <swrlx:individualPropertyAtom  swrlx:property="parent"> 
-      <ruleml:var>x2</ruleml:var>
+    <swrlx:individualPropertyAtom  swrlx:property="hasParent"> 
       <ruleml:var>x1</ruleml:var>
-    </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="brother"> 
-      <ruleml:var>x3</ruleml:var>
       <ruleml:var>x2</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="uncle"> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasBrother"> 
+      <ruleml:var>x2</ruleml:var>
       <ruleml:var>x3</ruleml:var>
+    </swrlx:individualPropertyAtom> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasUncle"> 
       <ruleml:var>x1</ruleml:var>
+      <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
   </ruleml:_head> 
 </ruleml:imp>
