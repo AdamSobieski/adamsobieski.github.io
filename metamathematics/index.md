@@ -130,7 +130,9 @@ $$ \left\lvert X_{n+1} \right\rvert = \left\lvert X_{n} \right\rvert + \left\lve
 
 ## Abstract Rewriting Systems
 
-[Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system), [Rewriting](https://en.wikipedia.org/wiki/Rewriting), [L-system](https://en.wikipedia.org/wiki/L-system)
+[Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system), [Rewriting](https://en.wikipedia.org/wiki/Rewriting)
+
+[Iterated function system](https://en.wikipedia.org/wiki/Iterated_function_system), [L-system](https://en.wikipedia.org/wiki/L-system)
 
 ## Knowledge Graph Completion
 
