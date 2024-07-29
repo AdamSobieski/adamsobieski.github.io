@@ -44,7 +44,7 @@ WHERE
 }
 ```
 
-Here is an that logic rule rephrased as a [rewrite](https://en.wikipedia.org/wiki/Rewriting) rule:
+Here is the logic rule rephrased as a [rewrite](https://en.wikipedia.org/wiki/Rewriting) rule:
 
 $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3}), u(x_{1}, x_{3}) $$
 
