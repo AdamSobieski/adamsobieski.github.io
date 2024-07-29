@@ -24,11 +24,11 @@ $$ \rho_{3}(I, O) \coloneq e_{6} \in O, e_{7} \in O \leftarrow e_{4} \in I, e_{5
 
 $$ \dots $$
 
-This notation can be useful for cases where rules involve multiple input and/or output sets:
+Rules can involve multiple input and/or output sets:
 
 $$ \rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1} \in  R_{i}^{+} $$
 
-In some cases, when the sets being dealt with are clear in a context, this notation can be simplified to:
+When the sets being dealt with are clear in a context, notations can be simplified to:
 
 $$ e_{2} \leftarrow e_{1} $$
 
