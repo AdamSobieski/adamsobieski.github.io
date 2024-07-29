@@ -26,6 +26,10 @@ $$ \rho_{3}(I, O) := e_{6} \in O, e_{7} \in O \leftarrow e_{4} \in I, e_{5} \in 
 
 $$ \dots $$
 
+We could then define a set of rules
+
+$$ R(I, O) = \left{\rho_{1}(I, O), \rho_{2}(I, O), \rho_{3}(I, O) \right}
+
 Rules can involve multiple input and/or output sets:
 
 $$ \rho_{2} \in R_{i+1}^{+} \leftarrow e_{1} \in X_{i}, \rho_{1} \in  R_{i}^{+} $$
