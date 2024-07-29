@@ -33,7 +33,7 @@ WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
 Here is a similar SPARQL example:
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX ex:  <http://example.com>
+PREFIX ex:  <http://example.com/>
 
 INSERT 
 {
