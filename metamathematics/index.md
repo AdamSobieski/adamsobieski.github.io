@@ -16,33 +16,33 @@ There is an interesting generalization possible from rules and the `INSERT` oper
 
 Here is an example of a rule:
 
-$$ hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}) \rightarrow hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}), hasUncle(x_{1}, x_{3}) $$
+$$ parent(x_{1}, x_{2}), brother(x_{2}, x_{3}) \rightarrow parent(x_{1}, x_{2}), brother(x_{2}, x_{3}), uncle(x_{1}, x_{3}) $$
 
-Here is that rule in a Semantic Web Rule Language Concrete XML syntax:
+Here is that rule in a [Semantic Web Rule Language](https://en.wikipedia.org/wiki/Semantic_Web_Rule_Language) Concrete XML syntax:
 
 ```xml
 <ruleml:imp> 
   <ruleml:_rlab ruleml:href="#example1"/>
   <ruleml:_body> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasParent"> 
+    <swrlx:individualPropertyAtom  swrlx:property="parent"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x2</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasBrother"> 
+    <swrlx:individualPropertyAtom  swrlx:property="brother"> 
       <ruleml:var>x2</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
   </ruleml:_body> 
   <ruleml:_head> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasParent"> 
+    <swrlx:individualPropertyAtom  swrlx:property="parent"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x2</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasBrother"> 
+    <swrlx:individualPropertyAtom  swrlx:property="brother"> 
       <ruleml:var>x2</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
-    <swrlx:individualPropertyAtom  swrlx:property="hasUncle"> 
+    <swrlx:individualPropertyAtom  swrlx:property="uncle"> 
       <ruleml:var>x1</ruleml:var>
       <ruleml:var>x3</ruleml:var>
     </swrlx:individualPropertyAtom> 
