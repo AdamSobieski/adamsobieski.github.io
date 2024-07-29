@@ -10,7 +10,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-[Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Projection](https://en.wikipedia.org/wiki/Projection_(relational_algebra)), [Query language](https://en.wikipedia.org/wiki/Query_language), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system), [Select](https://en.wikipedia.org/wiki/Select_(SQL)), [SPARQL](https://en.wikipedia.org/wiki/SPARQL)
+[Data manipulation language](https://en.wikipedia.org/wiki/Data_manipulation_language), [Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Projection](https://en.wikipedia.org/wiki/Projection_(relational_algebra)), [Query language](https://en.wikipedia.org/wiki/Query_language), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system), [Select](https://en.wikipedia.org/wiki/Select_(SQL)), [SPARQL](https://en.wikipedia.org/wiki/SPARQL), [Update](https://en.wikipedia.org/wiki/Update_(SQL))
 
 ## Iterated Computation
 
