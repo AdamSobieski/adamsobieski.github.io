@@ -12,6 +12,35 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 [Data manipulation language](https://en.wikipedia.org/wiki/Data_manipulation_language), [Inference engine](https://en.wikipedia.org/wiki/Inference_engine), [Insert](https://en.wikipedia.org/wiki/Insert_(SQL)), [Pattern matching](https://en.wikipedia.org/wiki/Pattern_matching), [Query language](https://en.wikipedia.org/wiki/Query_language), [Query optimization](https://en.wikipedia.org/wiki/Query_optimization), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system), [SPARQL](https://en.wikipedia.org/wiki/SPARQL), [SPARQL Update](https://www.w3.org/TR/sparql11-update/)
 
+There is an interesting generalization from both rules and the `INSERT` operations from a number of data manipulation languages.
+
+Here is a SQL example:
+```sql
+INSERT INTO OldCustomers
+SELECT *
+FROM Customers
+WHERE country = 'USA';
+```
+
+Here is a SPARQL example:
+```sparql
+PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+INSERT 
+  { GRAPH <http://example/addresses>
+    {
+      ?person  foaf:name  ?name .
+      ?person  foaf:mbox  ?email
+    } }
+WHERE
+  { GRAPH  <http://example/people>
+    {
+      ?person  foaf:name  ?name .
+      OPTIONAL { ?person  foaf:mbox  ?email }
+    } }
+```
+
 ## Iterated Computation
 
 Let us consider a function, $C$, such that
