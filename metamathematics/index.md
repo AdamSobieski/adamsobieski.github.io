@@ -18,11 +18,11 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 There are different kinds of rules. For instance, some rules operate on sets of expressions and others on graphs. Let us consider the following notations for rules:
 
-$$ \rho_{1}(I, O) \coloneq e_{2} \in O \leftarrow e_{1} \in I $$
+$$ \rho_{1}(I, O) := e_{2} \in O \leftarrow e_{1} \in I $$
 
-$$ \rho_{2}(I, O) \coloneq e_{3} \in O \leftarrow e_{1} \in I, e_{2} \in I $$
+$$ \rho_{2}(I, O) := e_{3} \in O \leftarrow e_{1} \in I, e_{2} \in I $$
 
-$$ \rho_{3}(I, O) \coloneq e_{6} \in O, e_{7} \in O \leftarrow e_{4} \in I, e_{5} \in I $$
+$$ \rho_{3}(I, O) := e_{6} \in O, e_{7} \in O \leftarrow e_{4} \in I, e_{5} \in I $$
 
 $$ \dots $$
 
