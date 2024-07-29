@@ -16,25 +16,25 @@ There is an interesting generalization possible from rules and the `INSERT` oper
 
 Here is a SQL example:
 ```sql
-INSERT INTO NewCustomers
+INSERT INTO Next
 SELECT *
-FROM Customers
-WHERE balance > 10000;
+FROM Previous
+WHERE x > 10000;
 ```
 
 Here is a SPARQL example:
 ```sparql
-PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 INSERT 
-  { GRAPH <http://example/addresses>
+  { GRAPH <http://example.com/next>
     {
       ?person  foaf:name  ?name .
       ?person  foaf:mbox  ?email
     } }
 WHERE
-  { GRAPH  <http://example/people>
+  { GRAPH  <http://example.com/previous>
     {
       ?person  foaf:name  ?name .
       OPTIONAL { ?person  foaf:mbox  ?email }
