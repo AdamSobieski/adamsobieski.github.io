@@ -12,7 +12,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 [Inference engine](https://en.wikipedia.org/wiki/Inference_engine), [Query language](https://en.wikipedia.org/wiki/Query_language), [Query optimization](https://en.wikipedia.org/wiki/Query_optimization), [Relational algebra](https://en.wikipedia.org/wiki/Relational_algebra), [Rete algorithm](https://en.wikipedia.org/wiki/Rete_algorithm), [Rule-based system](https://en.wikipedia.org/wiki/Rule-based_system)
 
-There is an interesting generalization from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
+There is an interesting generalization possible from rules and the `INSERT` operations of a number of [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language).
 
 Here is a SQL example:
 ```sql
