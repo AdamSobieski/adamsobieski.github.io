@@ -144,6 +144,8 @@ Chen, Zhe, Yuehan Wang, Bin Zhao, Jing Cheng, Xin Zhao, and Zongtao Duan. "Knowl
 
 [Rule induction](https://en.wikipedia.org/wiki/Rule_induction)
 
+[Inductive logic programming](https://en.wikipedia.org/wiki/Inductive_logic_programming)
+
 ## Grammar Induction
 
 [Grammar induction](https://en.wikipedia.org/wiki/Grammar_induction), [Grammar-based code](https://en.wikipedia.org/wiki/Grammar-based_code)
