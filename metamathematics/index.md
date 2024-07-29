@@ -41,7 +41,7 @@ WHERE
     } }
 ```
 
-Contents, e.g., expressions, rows, or subgraphs, which match a specified pattern are copied from an old set of expressions, table of rows, or graph into a different and new set of expressions, table of rows, or graph.
+Contents, e.g., objects, expressions, rows, or subgraphs, which match a specified pattern are copied from an old set of objects, expressions, table of rows, or graph into a different and new set of objects, expressions, table of rows, or graph.
 
 ## Iterated Computation
 
