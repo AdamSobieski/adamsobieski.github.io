@@ -16,18 +16,18 @@ As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [
 
 Here is a similar SQL example:
 ```sql
-INSERT INTO NextTable (subject, predicate, object)
-SELECT DISTINCT s1.subject, 'u', s2.object
+INSERT INTO NextTable (s, p, o)
+SELECT DISTINCT s1.s, 'u', s2.o
 FROM PreviousTable s1, PreviousTable s2
-WHERE s1.predicate = 'p' AND s2.predicate = 'b' AND s1.object = s2.subject
+WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s
 UNION
-SELECT DISTINCT s1.subject, s1.predicate, s1.object
+SELECT DISTINCT s1.s, s1.p, s1.o
 FROM PreviousTable s1, PreviousTable s2
-WHERE s1.predicate = 'p' AND s2.predicate = 'b' AND s1.object = s2.subject
+WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s
 UNION
-SELECT DISTINCT s2.subject, s2.predicate, s2.object
+SELECT DISTINCT s2.s, s2.p, s2.o
 FROM PreviousTable s1, PreviousTable s2
-WHERE s1.predicate = 'p' AND s2.predicate = 'b' AND s1.object = s2.subject;
+WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
 ```
 
 Here is a similar SPARQL example:
