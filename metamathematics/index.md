@@ -18,6 +18,38 @@ Here is an example of a rule:
 
 $$ hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}) \rightarrow hasParent(x_{1}, x_{2}), hasBrother(x_{2}, x_{3}), hasUncle(x_{1}, x_{3}) $$
 
+Here is that rule in a Semantic Web Rule Language Concrete XML syntax:
+
+```xml
+<ruleml:imp> 
+  <ruleml:_rlab ruleml:href="#example1"/>
+  <ruleml:_body> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasParent"> 
+      <ruleml:var>x1</ruleml:var>
+      <ruleml:var>x2</ruleml:var>
+    </swrlx:individualPropertyAtom> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasBrother"> 
+      <ruleml:var>x2</ruleml:var>
+      <ruleml:var>x3</ruleml:var>
+    </swrlx:individualPropertyAtom> 
+  </ruleml:_body> 
+  <ruleml:_head> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasParent"> 
+      <ruleml:var>x1</ruleml:var>
+      <ruleml:var>x2</ruleml:var>
+    </swrlx:individualPropertyAtom> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasBrother"> 
+      <ruleml:var>x2</ruleml:var>
+      <ruleml:var>x3</ruleml:var>
+    </swrlx:individualPropertyAtom> 
+    <swrlx:individualPropertyAtom  swrlx:property="hasUncle"> 
+      <ruleml:var>x1</ruleml:var>
+      <ruleml:var>x3</ruleml:var>
+    </swrlx:individualPropertyAtom> 
+  </ruleml:_head> 
+</ruleml:imp>
+```
+
 Here is a SQL example:
 ```sql
 INSERT INTO NextTable
