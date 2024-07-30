@@ -8,13 +8,13 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-There is an interesting generalization possible involving rules and the `INSERT` operations of many [data manipulation languages](https://en.wikipedia.org/wiki/Data_manipulation_language) and [query languages](https://en.wikipedia.org/wiki/Query_language).
+There is an interesting generalization possible involving rules and the `INSERT` and `DELETE` commands of many [query languages](https://en.wikipedia.org/wiki/Query_language).
 
 Here is an example rule: any individual ($x_{1}$) whose parent ($x_{2}$) has a brother ($x_{3}$) has an uncle ($x_{3}$).
 
 $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow u(x_{1}, x_{3}) $$
 
-Here is a SQL example resembling the logic rule:
+Here is a SQL command resembling the logic rule:
 ```sql
 INSERT INTO CurrentTable (s, p, o)
 SELECT DISTINCT s1.s, 'u', s2.o
@@ -22,7 +22,7 @@ FROM CurrentTable s1, CurrentTable s2
 WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
 ```
 
-Here is a SPARQL example resembling the logic rule:
+Here is a SPARQL command resembling the logic rule:
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ex:  <http://example.com/>
@@ -50,7 +50,7 @@ $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3})
 
 As we are considering [rewriting](https://en.wikipedia.org/wiki/Rewriting) and [abstract rewriting systems](https://en.wikipedia.org/wiki/Abstract_rewriting_system), rules which intend to preserve their antecedents (or bodies) should copy these into their consequents (or heads). Broadly speaking, existing content (e.g., objects, expressions, rows, or subgraphs) which match specified patterns can optionally accompany any generated content intended to be placed in resultant sets, tables, or graphs.
 
-Here is a SQL example resembling the rewrite rule:
+Here is a SQL command resembling the rewrite rule:
 ```sql
 INSERT INTO NextTable (s, p, o)
 SELECT DISTINCT s1.s, 'u', s2.o
@@ -66,7 +66,7 @@ FROM CurrentTable s1, CurrentTable s2
 WHERE s1.p = 'p' AND s2.p = 'b' AND s1.o = s2.s;
 ```
 
-Here is a SPARQL example resembling the rewrite rule:
+Here is a SPARQL command resembling the rewrite rule:
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ex:  <http://example.com/>
@@ -90,7 +90,34 @@ WHERE
 }
 ```
 
-Discussed, below, are systems which process multiple rules in parallel and systems which have dynamic sets of rules.
+Note that the above rule examples pertain to additive rules. Here is an example of a subtractive rewrite rule:
+
+$$ i(x_{1}, x_{2}), j(x_{2}, x_{3}) \rightarrow \overline{k(x_{1}, x_{3})} $$
+
+This differs from adding expressions with logical negations to sets, tables, or graphs, it subtracts expressions if they are present. One can observe that the SPARQL command resembling it utilizes the `DELETE` operator.
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex:  <http://example.com/>
+
+DELETE
+{
+  GRAPH <http://example.com/next>
+  {
+    ?x1 ex:k ?x3.
+  }
+}
+WHERE
+{
+  GRAPH <http://example.com/current>
+  {
+    ?x1 ex:i ?x2.
+    ?x2 ex:j ?x3.
+  }
+}
+```
+
+When utilized, subtractive rules should be processed seperately, after additive rules.
 
 ## Iterated Computation
 
