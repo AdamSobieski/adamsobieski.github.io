@@ -247,12 +247,6 @@ Intelligent agents in systems could all cooperate upon singular collections of e
 
 [System of systems](https://en.wikipedia.org/wiki/System_of_systems)
 
-## Truth and Paradox
-
-[Truth](https://en.wikipedia.org/wiki/Truth), [Paradox](https://en.wikipedia.org/wiki/Paradox), [Paradoxes and Contemporary Logic](https://plato.stanford.edu/entries/paradoxes-contemporary-logic/), [Self-reference and Paradox](https://plato.stanford.edu/entries/self-reference/)
-
-For some systems, the expressions in sets, tables, or graphs can be interpreted as intended to be "true".
-
 ## Bibliography
 
 Silver, Charles L. _From Symbolic Logic... To Mathematical Logic_. Dubuque, IA: Brown (William C.), 1994.
