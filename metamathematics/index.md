@@ -8,7 +8,7 @@ This is a sketchpad for some [metamathematics](https://en.wikipedia.org/wiki/Met
 
 ## Rules
 
-There is an interesting generalization possible involving rules and the `INSERT` and `DELETE` commands of many [query languages](https://en.wikipedia.org/wiki/Query_language).
+There is an interesting generalization possible involving logic rules, [rewrite](https://en.wikipedia.org/wiki/Rewriting) rules and the `INSERT` and `DELETE` commands of [query languages](https://en.wikipedia.org/wiki/Query_language).
 
 Here is an example rule: any individual ($x_{1}$) whose parent ($x_{2}$) has a brother ($x_{3}$) has an uncle ($x_{3}$).
 
@@ -44,7 +44,7 @@ WHERE
 }
 ```
 
-Here is the logic rule rephrased as a [rewrite](https://en.wikipedia.org/wiki/Rewriting) rule:
+Here is the logic rule rephrased as a rewrite rule:
 
 $$ p(x_{1}, x_{2}), b(x_{2}, x_{3}) \rightarrow p(x_{1}, x_{2}), b(x_{2}, x_{3}), u(x_{1}, x_{3}) $$
 
