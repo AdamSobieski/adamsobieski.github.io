@@ -245,10 +245,6 @@ Intelligent agents in systems could all cooperate upon singular collections of e
 
 Towards enabling and increasing the emergence of [collective intelligence](https://en.wikipedia.org/wiki/Collective_intelligence) from orchestrated agents performing mathematical reasoning, an encyclopedia article on the [philosophy of mathematics](https://en.wikipedia.org/wiki/Philosophy_of_mathematics) indicates that "major discoveries can be made in one branch of mathematics and be relevant to another, yet the relationship goes undiscovered for lack of social contact between mathematicians." Social constructivists argue that "each speciality forms its own [epistemic community](https://en.wikipedia.org/wiki/Epistemic_community) and often has great difficulty communicating, or motivating the investigation of [unifying conjectures](https://en.wikipedia.org/wiki/Unifying_conjecture) that might relate different areas of mathematics."
 
-## Systems of Systems
-
-[System of systems](https://en.wikipedia.org/wiki/System_of_systems)
-
 ## Bibliography
 
 Silver, Charles L. _From Symbolic Logic... To Mathematical Logic_. Dubuque, IA: Brown (William C.), 1994.
