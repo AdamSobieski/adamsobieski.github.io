@@ -237,6 +237,10 @@ An analogy can be drawn with the [regulation of gene expression](https://en.wiki
 
 That is, only a subset of the rules and the expressions would need to be "expressed", and thus computed, at each iteration.
 
+## Cognition
+
+[Cognition](https://en.wikipedia.org/wiki/Cognition), [Problem-solving](https://en.wikipedia.org/wiki/Problem_solving)
+
 ## Multi-agent Systems
 
 [Multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could create, select, and orchestrate specialized [agents](https://en.wikipedia.org/wiki/Intelligent_agent) which operate upon collections of expressions and rules.
