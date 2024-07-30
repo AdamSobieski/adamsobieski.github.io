@@ -189,6 +189,8 @@ From which we can obtain:
 
 $$ \left\lvert X_{n+1} \right\rvert = \left\lvert X_{n} \right\rvert + \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{+} \right\rvert - \left\lvert \Delta_{X_{n+1} \leftarrow X_{n}}^{-} \right\rvert $$
 
+$$ \left\lvert X_{n+1} \right\rvert = \left\lvert R_{n}^{+}(X_{n}) \right\rvert - \left\lvert R_{n}^{+}(X_{n}) \cap R_{n}^{-}(X_{n}) \right\rvert $$
+
 ## Abstract Rewriting Systems
 
 [Abstract rewriting system](https://en.wikipedia.org/wiki/Abstract_rewriting_system), [Rewriting](https://en.wikipedia.org/wiki/Rewriting)
