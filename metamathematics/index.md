@@ -94,7 +94,7 @@ Note that the above rule examples pertain to additive rules. Here is an example 
 
 $$ i(x_{1}, x_{2}), j(x_{2}, x_{3}) \rightarrow \overline{k(x_{1}, x_{3})} $$
 
-This differs from adding expressions with logical negations to sets, tables, or graphs, it subtracts expressions if they are present. One can observe that the SPARQL command resembling it utilizes the `DELETE` command.
+This differs from adding expressions with logical negations to sets, tables, or graphs, it subtracts expressions if they are present. One can observe that the SPARQL command resembling it utilizes `DELETE`.
 
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
