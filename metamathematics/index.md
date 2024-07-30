@@ -239,7 +239,9 @@ That is, only a subset of the rules and the expressions would need to be "expres
 
 ## Multi-agent Systems
 
-Similarly, [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could create, select, and orchestrate specialized [agents](https://en.wikipedia.org/wiki/Intelligent_agent) which operate upon sets, tables, or graphs of expressions and rules.
+[Multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could create, select, and orchestrate specialized [agents](https://en.wikipedia.org/wiki/Intelligent_agent) which operate upon collections of expressions and rules.
+
+Intelligent agents in systems could all cooperate upon singular collections of expressions and rules, cooperate in groups upon multiple workspaces, or cooperate in complex orchestrations with groups and inter-group communication. Agents organized into groups could access and make use of inter-group resources and send contents and discoveries from their workspaces to these inter-group resources.
 
 ## Systems of Systems
 
