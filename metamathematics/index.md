@@ -117,8 +117,6 @@ WHERE
 }
 ```
 
-When utilized, subtractive rules should be processed seperately, after additive rules.
-
 ## Iterated Computation
 
 Let us consider a function, $C$, such that
