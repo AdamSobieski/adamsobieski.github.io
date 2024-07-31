@@ -243,9 +243,9 @@ That is, only a subset of the rules and the expressions would need to be "expres
 
 ## Multi-agent Systems
 
-[Multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could create, select, and orchestrate specialized [agents](https://en.wikipedia.org/wiki/Intelligent_agent) which operate upon collections of expressions and rules.
+[Multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system) could create, select, and orchestrate specialized [agents](https://en.wikipedia.org/wiki/Intelligent_agent) which operate upon one or more collections of expressions and rules.
 
-Intelligent agents in systems could all cooperate upon singular collections of expressions and rules, cooperate in groups upon multiple workspaces, or cooperate in complex orchestrations with groups and inter-group communication. Agents organized into groups could access and make use of inter-group resources and send contents and discoveries from their workspaces to these inter-group resources.
+Intelligent agents in systems could all cooperate upon shared collections of expressions and rules, cooperate in groups upon multiple workspaces, or cooperate in complex orchestrations with groups and inter-group communication. Agents organized into groups could access and make use of inter-group resources and send contents and discoveries from their workspaces to these inter-group resources.
 
 Towards enabling and increasing the emergence of [collective intelligence](https://en.wikipedia.org/wiki/Collective_intelligence) from orchestrated agents performing mathematical reasoning, an encyclopedia article on the [philosophy of mathematics](https://en.wikipedia.org/wiki/Philosophy_of_mathematics) indicates that "major discoveries can be made in one branch of mathematics and be relevant to another, yet the relationship goes undiscovered for lack of social contact between mathematicians." Social constructivists argue that "each speciality forms its own [epistemic community](https://en.wikipedia.org/wiki/Epistemic_community) and often has great difficulty communicating, or motivating the investigation of [unifying conjectures](https://en.wikipedia.org/wiki/Unifying_conjecture) that might relate different areas of mathematics."
 
