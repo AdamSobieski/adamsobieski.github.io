@@ -237,7 +237,7 @@ An analogy can be drawn with the [regulation of gene expression](https://en.wiki
 
 That is, only a subset of the rules and the expressions would need to be "expressed", and thus computed, at each iteration.
 
-## Cognition
+## Artificial Intelligence
 
 [Cognition](https://en.wikipedia.org/wiki/Cognition), [Problem-solving](https://en.wikipedia.org/wiki/Problem_solving)
 
@@ -252,6 +252,8 @@ Towards enabling and increasing the emergence of [collective intelligence](https
 How can continuing technological advancements, e.g., scholarly and scientific [collaboration software](https://en.wikipedia.org/wiki/Collaborative_software), [mathematical knowledge management](https://en.wikipedia.org/wiki/Mathematical_knowledge_management), and [recommender systems](https://en.wikipedia.org/wiki/Recommender_system), contribute to the better routing of information and discoveries between epistemic communities, between teams comprised of human and artificial-intelligence agents?
 
 ## Bibliography
+
+Gómez Ramírez, Danny A. J. _Artificial Mathematical Intelligence: Cognitive, (Meta)mathematical, Physical and Philosophical Foundations_. Springer, 2020.
 
 Silver, Charles L. _From Symbolic Logic... To Mathematical Logic_. Dubuque, IA: Brown (William C.), 1994.
 
