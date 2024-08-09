@@ -6,7 +6,7 @@ title: Thought Experiments
 
 This is a sketchpad for some [thought experiments](https://en.wikipedia.org/wiki/Thought_experiment).
 
-## Higher-dimensional Computer Vision and Artificial Intelligence
+## Higher-dimensional Computer Vision
 
 What if artificial-intelligence systems could perceive, navigate, and explore higher-dimensional simulated environments?
 
