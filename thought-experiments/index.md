@@ -8,10 +8,10 @@ This is a sketchpad for some [thought experiments](https://en.wikipedia.org/wiki
 
 ## Higher-dimensional Computer Vision
 
-What if artificial-intelligence systems could perceive, navigate, and explore higher-dimensional simulated environments?
+What if artificial-intelligence systems could perceive, navigate, and explore simulated higher-dimensional environments?
 
-How would artificial, simulated higher-dimensional sensors work? For four-dimensional spaces, might artificial retinas be three-dimensional? Would four-dimensional lenses focus incoming rays onto three-dimensional retinas?
+How would sensors work for higher-dimensional spaces? For four-dimensional spaces, would four-dimensional lenses focus incoming rays onto three-dimensional retinas?
 
-Would artificial neural networks be able to readily learn to control attached sensors and to move around in four-dimensional spaces, perceiving and comprehending these environments?
+Can artificial neural networks learn to control attached sensors and move around in higher-dimensional spaces, perceiving and comprehending these environments?
 
 Would artificial-intelligence systems trained in higher-dimensional spaces be able to directly imagine higher-dimensional phenomena?
