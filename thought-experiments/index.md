@@ -20,6 +20,4 @@ What if artificial-intelligence systems could perceive, navigate, and explore si
 
 How would sensors work for higher-dimensional spaces? For four-dimensional spaces, would four-dimensional lenses focus incoming rays onto three-dimensional retinas?
 
-Can artificial neural networks learn to control attached sensors and move around in higher-dimensional spaces, perceiving and comprehending these environments?
-
-Would artificial-intelligence systems trained in higher-dimensional spaces be able to directly imagine higher-dimensional phenomena?
+Can artificial-intelligence systems, e.g., artificial neural networks, learn to control attached sensors and to navigate in higher-dimensional spaces, perceiving and comprehending these environments?
