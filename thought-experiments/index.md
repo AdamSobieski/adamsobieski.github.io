@@ -22,4 +22,8 @@ Can artificial-intelligence systems, e.g., artificial neural networks, learn to 
 
 ## Comparative Physics
 
-Using [computer simulations](https://en.wikipedia.org/wiki/Computer_simulation), scientists could create and vary models and systems other than those describing the observable universe.
+Using [computer simulations](https://en.wikipedia.org/wiki/Computer_simulation), scientists could create and vary models and systems other than those describing our universe.
+
+The [Universe Machine](https://en.wikipedia.org/wiki/UniverseMachine) is a project carrying out astrophysical supercomputer simulations of various models of possible universes. The project was created by astronomer Peter Behroozi and his research team at the Steward Observatory and the University of Arizona.
+
+Numerous universes with different physical characteristics may be simulated in order to develop insights into the possible beginning and evolution of our universe. Behroozi indicates that, "on the computer, we can create many different universes and compare them to the actual one, and that lets us infer which rules lead to the one we see."
