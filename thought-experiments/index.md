@@ -18,6 +18,6 @@ Kinds of [sensors](https://en.wikipedia.org/wiki/Sensor) include [automotive](ht
 
 What if artificial-intelligence systems could perceive, navigate, and explore [simulated](https://en.wikipedia.org/wiki/Computer_simulation) higher-dimensional environments?
 
-How might sensors work for higher-dimensional spaces? For four-dimensional spaces, might four-dimensional [lenses](https://en.wikipedia.org/wiki/Lens) focus incoming rays onto three-dimensional retinas?
+How might sensors work for higher-dimensional spaces? For four-dimensional spaces, might four-dimensional [lenses](https://en.wikipedia.org/wiki/Lens) [focus](https://en.wikipedia.org/wiki/Focus_(optics)) incoming rays onto three-dimensional [retinas](https://en.wikipedia.org/wiki/Retina)?
 
 Can artificial-intelligence systems, e.g., artificial neural networks, learn to control attached sensors and to navigate in higher-dimensional spaces, perceiving and comprehending these environments?
