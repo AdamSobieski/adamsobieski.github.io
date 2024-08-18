@@ -6,6 +6,10 @@ title: Thought Experiments
 
 This is a sketchpad for some [thought experiments](https://en.wikipedia.org/wiki/Thought_experiment).
 
+## Computer-automated Scientific Discovery
+
+What if artificial-intelligence systems could produce and present us with useful [scientific models](https://en.wikipedia.org/wiki/Scientific_modelling) from observations and data? Might those instantaneously available, best models provided by these systems change – might there be [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) – as more observations were provided to them or as more [processing or reasoning occurred](https://en.wikipedia.org/wiki/Anytime_algorithm)? Might such systems be able to [seek observations](https://en.wikipedia.org/wiki/Active_learning_(machine_learning)), ask questions, or, better, design scientific experiments?
+
 ## Exotic Sensory Modalities
 
 Artificial-intelligence systems can [attend to](https://en.wikipedia.org/wiki/Crossmodal_attention), [perceive](https://en.wikipedia.org/wiki/Machine_perception), and [integrate](https://en.wikipedia.org/wiki/Multisensory_integration) data from kinds of sensors beyond those corresponding with the human [visual](https://en.wikipedia.org/wiki/Visual_system), [auditory](https://en.wikipedia.org/wiki/Auditory_system), [vestibular](https://en.wikipedia.org/wiki/Vestibular_system), [olfactory](https://en.wikipedia.org/wiki/Olfactory_system), [gustatory](https://en.wikipedia.org/wiki/Gustatory_system), and [somatosensory](https://en.wikipedia.org/wiki/Somatosensory_system) sensory systems.
