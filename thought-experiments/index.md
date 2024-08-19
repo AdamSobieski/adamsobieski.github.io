@@ -8,7 +8,7 @@ This is a sketchpad for some [thought experiments](https://en.wikipedia.org/wiki
 
 ## Computer-automated Scientific Discovery
 
-What if artificial-intelligence systems could produce and present us with useful [scientific models](https://en.wikipedia.org/wiki/Scientific_modelling) from observations and data? Might those instantaneously available, best models provided by these systems change – might there be [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) – as more observations were provided to them or as more [processing or reasoning occurred](https://en.wikipedia.org/wiki/Anytime_algorithm)? Might such systems be able to [seek observations](https://en.wikipedia.org/wiki/Active_learning_(machine_learning)), ask questions, or, better, design scientific experiments?
+What if artificial-intelligence systems, e.g., [intelligent agents](https://en.wikipedia.org/wiki/Intelligent_agent) or [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system), could produce and present us with useful [scientific models](https://en.wikipedia.org/wiki/Scientific_modelling) from observations and data? Might such systems be able to [seek observations](https://en.wikipedia.org/wiki/Active_learning_(machine_learning)), ask questions, or, better, design scientific experiments? Might the instantaneously available, best models provided by these systems change – might there be [paradigm shifts](https://en.wikipedia.org/wiki/Paradigm_shift) – as more observations were provided to them or as more processing or reasoning occurred?
 
 ## Exotic Sensory Modalities
 
