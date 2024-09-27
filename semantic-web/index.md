@@ -2,6 +2,8 @@
 title: A Semantic Web Object Model
 ---
 
+## A Semantic Web Object Model
+
 Here is a sketch of a Semantic Web object model expressed using TypeScript.
 
 ```typescript
