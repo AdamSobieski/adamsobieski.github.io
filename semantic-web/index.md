@@ -259,21 +259,23 @@ let xsd = 'http://www.w3.org/2001/XMLSchema#';
 
 let i = window.semantics.implementation;
 
-let insertions = i.createGraph([], { isGroundOnly: false });
 let deletions = i.createGraph([], { isGroundOnly: false });
+let insertions = i.createGraph([], { isGroundOnly: false });
 let where = i.createGraph([], { isGroundOnly: false });
 
-let update = i.createUpdate(insertions, deletions, where);
+let update = i.createUpdate(deletions, insertions, where);
 
-assert(update.where.isGroundOnly === false);
 assert(update.delete.isGroundOnly === false);
 assert(update.insert.isGroundOnly === false);
+assert(update.where.isGroundOnly === false);
 
 let x = i.createVariable('x');
 
 update.where.add(x, i.createIRI(rdf, 'type'), i.createIRI(ex, 'Widget'));
 update.where.add(x, i.createIRI(ex, 'color'), i.createLiteral(oldColor));
+
 update.delete.add(x, i.createIRI(ex, 'color'), i.createLiteral(oldColor));
+
 update.insert.add(x, i.createIRI(ex, 'color'), i.createLiteral(newColor));
 
 window.semantics.open();
