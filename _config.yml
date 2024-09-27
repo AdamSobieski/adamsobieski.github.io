@@ -1,5 +1,5 @@
 # _config.yml
-theme: minima
+theme: hacker
 lsi: false
 safe: true
 incremental: false
