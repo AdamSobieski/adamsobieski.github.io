@@ -1,10 +1,10 @@
 ---
-title: A Semantic Web Object Model
+title: A Semantic Object Model
 ---
 
-## A Semantic Web Object Model
+## A Semantic Object Model
 
-Here is a sketch of a Semantic Web object model expressed using TypeScript.
+Here is a sketch of a Semantic Object Model (SOM) expressed using TypeScript.
 
 ```
 type IRI =
