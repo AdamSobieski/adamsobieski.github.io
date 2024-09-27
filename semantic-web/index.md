@@ -205,3 +205,21 @@ type Semantics =
     close(): void;
 }
 ```
+
+## Usage Examples
+
+### Example 1
+
+```
+let rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
+let xsd = 'http://www.w3.org/2001/XMLSchema#';
+let ex = 'http://www.example.org/ns#'
+
+let graph = window.semantics.implementation.createGraph();
+let i = window.semantics.implementation;
+
+graph.add(i.createIRI(ex, 'widget-123'), i.createIRI(rdf, 'type'), i.createIRI(ex, 'Widget'));
+graph.add(i.createIRI(ex, 'widget-123'), i.createIRI(ex, 'mass'), i.createLiteral(123));
+```
+
+
