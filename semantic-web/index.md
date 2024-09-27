@@ -211,15 +211,41 @@ type Semantics =
 ### Example 1
 
 ```
+let ex = 'http://www.example.org/ns#'
 let rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 let xsd = 'http://www.w3.org/2001/XMLSchema#';
-let ex = 'http://www.example.org/ns#'
 
 let graph = window.semantics.implementation.createGraph();
 let i = window.semantics.implementation;
 
-graph.add(i.createIRI(ex, 'widget-123'), i.createIRI(rdf, 'type'), i.createIRI(ex, 'Widget'));
-graph.add(i.createIRI(ex, 'widget-123'), i.createIRI(ex, 'mass'), i.createLiteral(123));
+let widget = i.createIRI(ex, 'widget-123');
+graph.add(widget, i.createIRI(rdf, 'type'), i.createIRI(ex, 'Widget'));
+graph.add(widget, i.createIRI(ex, 'mass'), i.createLiteral(1234));
+graph.add(widget, i.createIRI(ex, 'color'), i.createLiteral('blue'));
 ```
 
+### Example 2
 
+```
+let ex = 'http://www.example.org/ns#'
+let rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
+let xsd = 'http://www.w3.org/2001/XMLSchema#';
+let dcterms = 'http://purl.org/dc/terms/';
+
+let i = window.semantics.implementation;
+
+let graph = i.createGraph([], { name: i.createIRI('http://www.namedgraph.org/ns#graph-123') });
+
+let element = window.document.getElementById('widget-123');
+let component = element.id === null ? i.createBlank(nextIdentifier()) : i.createIRI(element.baseURI, element.id);
+
+graph.add(graph.name, i.createIRI(ex, 'about'), component);
+graph.add(component, i.createIRI(rdf, 'type'), i.createIRI(ex, 'Widget'));
+graph.add(component, i.createIRI(ex, 'mass'), i.createLiteral(1234));
+graph.add(component, i.createIRI(ex, 'color'), i.createLiteral('blue'));
+graph.add(component, i.createIRI(dcterms, 'description'), i.createLiteral('...'));
+
+window.semantics.open();
+window.semantics.setDescription(element, graph);
+window.semantics.close();
+```
