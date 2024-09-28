@@ -263,20 +263,18 @@ let deletions = i.createGraph([], { isGroundOnly: false });
 let insertions = i.createGraph([], { isGroundOnly: false });
 let where = i.createGraph([], { isGroundOnly: false });
 
-let update = i.createUpdate(deletions, insertions, where);
-
-assert(update.delete.isGroundOnly === false);
-assert(update.insert.isGroundOnly === false);
-assert(update.where.isGroundOnly === false);
+assert(deletions.isGroundOnly === false);
+assert(insertions.isGroundOnly === false);
+assert(where.isGroundOnly === false);
 
 let x = i.createVariable('x');
 
-update.where.add(x, i.createIRI(rdf, 'type'), i.createIRI(ex, 'Widget'));
-update.where.add(x, i.createIRI(ex, 'color'), i.createLiteral(oldColor));
+deletions.add(x, i.createIRI(ex, 'color'), i.createLiteral(oldColor));
+insertions.add(x, i.createIRI(ex, 'color'), i.createLiteral(newColor));
+where.add(x, i.createIRI(rdf, 'type'), i.createIRI(ex, 'Widget'));
+where.add(x, i.createIRI(ex, 'color'), i.createLiteral(oldColor));
 
-update.delete.add(x, i.createIRI(ex, 'color'), i.createLiteral(oldColor));
-
-update.insert.add(x, i.createIRI(ex, 'color'), i.createLiteral(newColor));
+let update = i.createUpdate(deletions, insertions, where);
 
 window.semantics.open();
 window.semantics.updateDescription(element, update);
