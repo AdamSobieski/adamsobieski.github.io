@@ -216,6 +216,7 @@ const rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 const xsd = 'http://www.w3.org/2001/XMLSchema#';
 
 const i = window.semantics.implementation;
+
 let graph = i.createGraph();
 
 let widget = i.createIRI(ex, 'widget-123');
