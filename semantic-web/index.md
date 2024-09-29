@@ -215,8 +215,8 @@ const ex = 'http://www.example.org/ns#'
 const rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 const xsd = 'http://www.w3.org/2001/XMLSchema#';
 
-let graph = window.semantics.implementation.createGraph();
-let i = window.semantics.implementation;
+const i = window.semantics.implementation;
+let graph = i.createGraph();
 
 let widget = i.createIRI(ex, 'widget-123');
 graph.add(widget, i.createIRI(rdf, 'type'), i.createIRI(ex, 'Widget'));
@@ -232,7 +232,7 @@ const rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 const xsd = 'http://www.w3.org/2001/XMLSchema#';
 const dcterms = 'http://purl.org/dc/terms/';
 
-let i = window.semantics.implementation;
+const i = window.semantics.implementation;
 
 let graph = i.createGraph([], { name: i.createIRI('http://www.namedgraph.org/ns#graph-123') });
 
@@ -257,7 +257,7 @@ const ex = 'http://www.example.org/ns#'
 const rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
 const xsd = 'http://www.w3.org/2001/XMLSchema#';
 
-let i = window.semantics.implementation;
+const i = window.semantics.implementation;
 
 let deletions = i.createGraph([], { isGroundOnly: false });
 let insertions = i.createGraph([], { isGroundOnly: false });
