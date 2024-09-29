@@ -81,7 +81,7 @@ type GraphGroundOnly = Iterable<TripleGround> &
     readonly isValidOnly: boolean;
     readonly isReadOnly: boolean;
 
-    readonly isGround: boolean;
+    readonly isGround: true;
     readonly isValid: boolean;
     readonly isEmpty: boolean;
 
