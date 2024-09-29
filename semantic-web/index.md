@@ -211,9 +211,9 @@ type Semantics =
 ### Example 1
 
 ```
-let ex = 'http://www.example.org/ns#'
-let rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
-let xsd = 'http://www.w3.org/2001/XMLSchema#';
+const ex = 'http://www.example.org/ns#'
+const rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
+const xsd = 'http://www.w3.org/2001/XMLSchema#';
 
 let graph = window.semantics.implementation.createGraph();
 let i = window.semantics.implementation;
@@ -227,10 +227,10 @@ graph.add(widget, i.createIRI(ex, 'color'), i.createLiteral('blue'));
 ### Example 2
 
 ```
-let ex = 'http://www.example.org/ns#'
-let rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
-let xsd = 'http://www.w3.org/2001/XMLSchema#';
-let dcterms = 'http://purl.org/dc/terms/';
+const ex = 'http://www.example.org/ns#'
+const rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
+const xsd = 'http://www.w3.org/2001/XMLSchema#';
+const dcterms = 'http://purl.org/dc/terms/';
 
 let i = window.semantics.implementation;
 
@@ -253,9 +253,9 @@ window.semantics.close();
 ### Example 3
 
 ```
-let ex = 'http://www.example.org/ns#'
-let rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
-let xsd = 'http://www.w3.org/2001/XMLSchema#';
+const ex = 'http://www.example.org/ns#'
+const rdf = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
+const xsd = 'http://www.w3.org/2001/XMLSchema#';
 
 let i = window.semantics.implementation;
 
